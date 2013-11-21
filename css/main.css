@@ -25,6 +25,26 @@ label {
 	height: 31px;
 }*/
 
+input[type=radio], input[type=checkbox] {
+    display: none; 
+}
+
+input[type=checkbox] + label{
+	cursor: pointer;
+}
+
+input[type=checkbox] + label:before {
+	content: "";
+	display: inline-block;
+	padding-left: 24px;
+	height: 17px;
+	background: url(../img/checkbox.png) no-repeat left center;
+}
+
+input[type=checkbox]:checked + label:before {
+	background: url(../img/checkbox_pressed.png) no-repeat left center;
+}
+
 .big_radio label {
 	padding: 6px 0px 6px 14px;
 	cursor: pointer;
@@ -63,9 +83,10 @@ label {
 	background: url(../img/medium_radio_r.png) no-repeat right center;
 }
 
-input[type=radio] {  
-    display: none; 
-}
+
+
+
+
 
 .circle_radio label{
 	cursor: pointer
@@ -287,6 +308,7 @@ aside.filter {
 
 .filter .filter_details {
 	padding-left: 37px;
+		font-size: 14px;
 }
 
 
@@ -314,6 +336,11 @@ aside.filter {
 .rooms_count {
 	padding-bottom: 20px;
 }
+
+.filter .is_new, .filter .is_commercial {
+	font-weight: bold;
+}
+
 
 /*************************************************
 /* End of Filter styles                       
