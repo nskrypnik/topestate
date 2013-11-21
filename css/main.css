@@ -1,0 +1,457 @@
+
+/*************************************************
+/* Common HTML style tags                       
+/************************************************/
+   
+body {
+    background-color: #EBEBEB;
+	position: relative;
+}
+
+
+/*************************************************
+/* Form styles                       
+/************************************************/
+
+label {
+	display: inline-block;
+}
+
+/*
+.big_radio label:before {  
+    content: "";  
+    display: inline-block;
+	padding-left: 14px;
+	height: 31px;
+}*/
+
+.big_radio label {
+	padding: 6px 0px 6px 14px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.big_radio label  span{
+	padding: 6px 14px 6px 0px;
+}
+
+.big_radio input[type=radio]:checked + label {
+	background: url(../img/big_radio_l.png) no-repeat left center;
+}
+
+.big_radio input[type=radio]:checked + label span{
+	background: url(../img/big_radio_r.png) no-repeat right center;
+}
+
+.medium_radio label {
+	padding: 6px 0px 6px 9px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.medium_radio label  span{
+	padding: 6px 9px 6px 0px;
+}
+
+.medium_radio input[type=radio]:checked + label {
+	background: url(../img/medium_radio_l.png) no-repeat left center;
+}
+
+.medium_radio input[type=radio]:checked + label span{
+	background: url(../img/medium_radio_r.png) no-repeat right center;
+}
+
+input[type=radio] {  
+    display: none; 
+}
+
+.circle_radio label{
+	cursor: pointer
+}
+
+.circle_radio label span{
+	text-align: center;
+	display: inline-block;
+	width: 33px;
+	height: 26px;
+	padding-top: 8px;
+	background: url(../img/circle_radio.png) no-repeat center center;
+	font-size: 12px;
+}
+
+.circle_radio input[type=radio]:checked + label span{
+	background: url(../img/circle_radio_pressed.png) no-repeat center center;
+}
+
+/*************************************************
+/* End Form styles
+/************************************************/
+
+
+
+/*************************************************
+/* Header styles                       
+/************************************************/
+
+.header_wrapper {
+	position: fixed;
+	height: 173px;
+	background: url(../img/head_bg.png) repeat-x;
+	left: 0;
+	right: 0;
+	z-index: 900;
+}
+
+.header_wrapper.main_page {
+	position: relative;
+}
+
+header {
+	width: 1000px;
+	margin: 0 auto 0 auto;
+	font-family: "Arial", Helvetica, sans-serif;
+	color: white;
+}
+
+header a{
+	font-family: "Arial", Helvetica, sans-serif;
+	color: white;
+}
+
+.main_logo {
+	float: left;
+	width: 265px;
+	height: 132px;
+	padding-top: 15px;
+	padding-left: 19px;
+}
+
+.main_logo a {
+	padding: 0;
+	margin: 0;
+}
+
+.header_caption {
+	float: left;
+	font-style: italic;
+}
+
+.header_caption h2{
+	font-weight: normal;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+.header_right {
+	float: right;
+	font-size: 14px;
+	width: 700px;
+	padding-top: 33px;
+}
+
+.header_contact_info {
+	font-style: italic;
+	float: right;
+	width: 210px;
+}
+
+.header_contact_info  .address, .header_contact_info  .email{
+	padding-left: 32px;
+}
+
+.header_contact_info  .address{
+	background: url(../img/head_location.png) no-repeat left 4px;
+	padding-bottom: 10px;
+}
+
+.header_contact_info  .email{
+	margin-top: 6px;
+	background: url(../img/head_email.png) no-repeat left 3px;
+}
+
+
+.header_phones {
+	float: right;
+	width: 96px;
+	padding-left: 25px;
+	background: url(../img/head_phone.png) no-repeat left 4px;
+}
+
+.header_phones p {
+	padding: 0;
+	margin: 0;
+}
+
+
+/* ====================== navlinks ====================== */
+
+nav {
+	float: right;
+	display: table;
+}
+
+nav ul {
+	display: table;
+	margin: 0;
+	padding: 9px 0 0 0;
+}
+
+nav ul > li {
+	float: left;
+	padding: 14px 0 14px 0;
+}
+
+nav a {
+	padding: 14px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav a.current {
+	padding: 14px 0 14px 14px;
+	color: black;
+	background: url(../img/nav_bg_left.png) no-repeat left 6px;
+}
+
+nav a.current span{
+	padding: 14px 14px 14px 0;
+	background: url(../img/nav_bg_right.png) no-repeat right 6px;
+}
+
+/*************************************************
+/* End of Header styles                       
+/************************************************/
+
+/*************************************************
+/* Filter styles                       
+/************************************************/
+
+.filter_wrapper {
+	position: fixed;
+	width: 1000px;
+	height: 100%;
+	left: 0;
+	right: 0;
+	margin: 0 auto 0 auto;
+	z-index: 100;
+	padding-top: 161px;
+}
+
+.filter_wrapper.main_page {
+	left: 0;
+	right: 0;
+	top: 0;
+	position: absolute;
+	padding-top: 0;
+}
+
+.filter_shadow {
+	position: relative;
+	width: 308px;
+	float: left;
+	height: 100%;
+	padding-left: 5px;
+	background: url(../img/filter_shadow.png) no-repeat left 6px;
+	z-index: 400;
+}
+
+.filter_wrapper.main_page .filter_shadow {
+	background: url(../img/filter_shadow.png) no-repeat left 170px;
+}
+
+.filter_wrapper.main_page form{
+	padding-top: 163px;
+}
+
+aside.filter {
+	background-color: #EBEBEB;
+	width: 302px;
+	height: 100%;
+	border-left: #dfdfdf solid 1px;
+	border-right: #dfdfdf solid 1px;
+
+}
+
+
+.filter .property_type {
+	padding-top: 28px;
+	padding-left: 27px;
+}
+
+.filter .property_type label{
+	margin-right: 29px;
+}
+
+.filter .filter_details {
+	padding-left: 37px;
+}
+
+
+.filter .filter_details  ul{
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
+.filter .filter_details h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding: 15px 0 15px 0;
+}
+
+.filter .river_side label{
+	margin-right: 9px;
+}
+
+.filter .river_side{
+	padding-bottom: 10px;	
+}
+
+.rooms_count {
+	padding-bottom: 20px;
+}
+
+/*************************************************
+/* End of Filter styles                       
+/************************************************/
+
+
+/*************************************************
+/* Main content styles
+/************************************************/
+
+.slider_wrapper {
+	margin-top: -12px;
+}
+
+.content_wrapper{
+	padding-top: 173px;
+	background: url(../img/content_bg.png) no-repeat bottom right;
+}
+
+.content.wide {
+	width: 1000px;
+	margin: 0 auto 0 auto;
+}
+
+.content {
+	font-family: "Arial", Helvetica, sans-serif;
+}
+
+.content article {
+	padding-top: 16px;
+}
+
+.content article h1{
+	font-size: 18px;
+	padding: 16px 0 16px 0;
+	margin: 0;
+}
+
+.content article p {
+	font-size: 12px;
+	line-height: 26px;
+	padding: 16px 0 16px 0;
+	margin: 0;
+}
+
+article.about_us img {
+	border: white solid 7px;
+}
+
+/*************************************************
+/* End of Main content styles                       
+/************************************************/
+
+
+
+/*************************************************
+/* Footer styles                       
+/************************************************/
+
+.footer_wrapper {
+	position: relative;
+	background: #313131 url(../img/footer_bg.png) repeat-x top left;
+	z-index: 500;
+}
+
+.footer_wrapper2{
+	background: transparent url(../img/footer_bg2.png) repeat;
+}
+
+.footer_wrapper.main_page{
+	min-height: 350px;
+}
+
+footer {
+	margin: 0 auto 0 auto ;
+	width: 1000px;
+	font-family: "Arial", Helvetica, sans-serif;
+	color: white;
+}
+
+.footer_links {
+	float: left;
+	padding-top: 50px;
+	width: 280px;
+}
+
+.footer_links.short{
+	padding-right: 67px;
+	width: 145px;
+}
+
+.footer_links.medium{
+	width: 212px;
+	padding-right: 67px;
+}
+
+.footer_links a{
+	color: white;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+.footer_links h2 {
+	padding: 0 0 20px 0;
+	margin: 0;
+	font-size: 12px;
+	font-weight: bold
+}
+
+.footer_links ul {
+	list-style: none outside none;
+	display: table;
+	margin: 0;
+	padding: 0;
+}
+
+.footer_links ul li{
+	margin-bottom: 10px;
+	line-height: 12px;
+}
+
+.footer_links ul.big_links a {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+footer .copyright {
+	color: #828282;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 17px 0 20px 0;
+}
+
+.main_page footer .copyright{
+	padding: 17px 0 20px 0;
+}
+
+/*************************************************
+/* End of Footer styles                       
+/************************************************/
+

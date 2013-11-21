@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		
+		<!-- expand content for all viewport height -->
+		<script>
+			var elem = (document.compatMode === "CSS1Compat") ? 
+			document.documentElement :
+			document.body;
+
+			var height = elem.clientHeight;
+			document.write("<style>.slider_wrapper {min-height: " + (height - 149) +"px;}</style>")
+		</script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Site applicaiton goes here -->
+		<div class="header_wrapper main_page">
+			<header>
+				<!-- Main logo goes here -->
+				<div class="main_logo"><a href="index.html"><img src="img/head_logo.png" /></a></div>
+				<div class="header_right"> <!-- header_right -->
+					<div class="header_info"> <!-- header_info -->
+						<div class="header_caption">
+							<h2>Агентство недвижимости в Днепропетровске</h2>
+						</div>
+						<div class="header_phones">
+							<p>
+								097  321 68 31<br />
+								063  697 76 76<br />
+								067  955 00 50
+							</p>
+						</div>
+						<div class="header_contact_info">
+							<div class="address">ул. Демьяна Бедного, 15 </div>
+							<div class="email">topestate.dp.ua@gmail.com</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<nav> <!-- header navigation links -->
+						<ul>
+							<li><a href="sale.html"><span>Продажа</span></a></li>
+							<li><a href="rent.html"><span>Аренда</span></a></li>
+							<li><a href="featured.html" class="current"><span>Свежие предложения</span></a></li>
+							<li><a href="notepad.html"><span>Блокнот</span></a></li>
+							<li><a href="faq.html"><span>Полезно знать</span></a></li>
+							<li><a href="aboutus.html"><span>О нас</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div clss="clearfix"></div>
+			</header>
+		</div>
+		
+		<!-- Filter markup -->
+		<div class="filter_wrapper main_page">
+			<div class="filter_shadow">
+				<aside class="filter">
+					<form>
+						<div class="property_type big_radio">
+							<input type="radio" name="property_type" value="rent" id="rent" />
+								<label for="rent"><span>Аренда</span></label>
+							
+							<input type="radio" name="property_type" value="sale" id="sale"/>
+								<label for="sale"><span>Продажа</span></label>
+
+						</div>
+						<div class="filter_details">
+							<!-- choose rooms count -->
+							<h3>Количество комнат</h3>
+							<div class="rooms_count circle_radio">
+								<input type="radio" name="rooms_count" value="1" id="rooms_1" />
+									<label for="rooms_1"><span>1</span></label>
+
+								<input type="radio" name="rooms_count" value="2" id="rooms_2" />
+									<label for="rooms_2"><span>2</span></label>
+								<input type="radio" name="rooms_count" value="3" id="rooms_3" />
+									<label for="rooms_3"><span>3</span></label>
+								<input type="radio" name="rooms_count" value="4" id="rooms_4" />
+									<label for="rooms_4"><span>4</span></label>
+								<input type="radio" name="rooms_count" value="5" id="rooms_5" />
+									<label for="rooms_5"><span>5+</span></label>
+								<input type="radio" name="rooms_count" value="6" id="rooms_6" />
+									<label for="rooms_6"><span>Дом</span></label>
+							</div>
+							<div class="is_new">
+								<input type="checkbox" name="is_new">Новострой</input>
+							</div>
+							<div class="is_commercial">
+								<input type="checkbox" name="is_commercial">Коммерческая недвижимость</input>
+							</div>
+							<h3>Район</h3>
+							<!-- choose river side -->
+							<div class="river_side medium_radio">
+								<input type="radio" name="river_side" value="left" id="left" />
+									<label for="left"><span>Левый берег</span></label>
+								<input type="radio" name="river_side" value="right" id="right" />
+									<label for="right"><span>Правый берег</span></label>
+							</div>
+							<!-- choose area -->
+							<div class="area">
+								<ul>
+									<li><input type="checkbox" name="">Гагарина - Подстанция</input></li>
+									<li><input type="checkbox" name="">Центр-Нагорка</input></li>
+									<li><input type="checkbox" name="">Победа 1 - 6</input></li>
+									<li><input type="checkbox" name="">Тополь - Сокол</input></li>
+									<li><input type="checkbox" name="">Г. Сталинграда - 12 квартал</input></li>
+									<li><input type="checkbox" name="">Рабочая - Титова</input></li>
+									<li><input type="checkbox" name="">Кирова - Пушкина</input></li>
+									<li><input type="checkbox" name="">Коммунар - Кр. Камень - Парус</input></li>
+									<li><input type="checkbox" name="">Петровского - Западный</input></li>
+									<li><input type="checkbox" name="">Пригород</input></li>
+								</ul>
+							</div>
+							
+							<h3>Цена</h3>
+							<div class="price-range">
+								от <input type="text" name="price_from"/> до <input type="text" name="price_to"/>
+							</div>
+							
+							<div class="currency">
+								<input type="radio" name="currency" value="usd">
+									<span>USD</span>
+								</input>
+								<input type="radio" name="currency" value="uah">
+									<span>UAH</span>
+								</input>
+							</div>
+							<h3>Поиск по ID</h3>
+							<div class="search_by_id">
+								<input type="text" name="property_id"/>
+							</div>
+							
+							<div class="submit_form">
+								<input type="submit" value="Поиск ">
+							</div>
+							
+						</div>
+					</form>
+				</aside>
+			</div>
+		</div>
+		<!-- End of Filter markup -->
+		
+		<div class="slider_wrapper">
+		
+		</div>
+		
+		<div class="footer_wrapper main_page">
+			<div class="footer_wrapper2">
+				<footer>
+					<div class="footer_links short">
+						<h2>Продажа квартир в Днепропетровске</h2>
+						<ul>
+							<li><a href="">Продажа 1-комнатных квартир в Днепропетровске</a></li>
+							<li><a href="">Продажа 2-комнатных квартир в Днепропетровске</a></li>
+							<li><a href="">Продажа 3-комнатных квартир в Днепропетровске</a></li>
+							<li><a href="">Продажа 4-комнатных квартир в Днепропетровске</a></li>
+						</ul>
+					</div>
+
+					<div class="footer_links short">
+						<h2>Аренда квартир в Днепропетровске</h2>
+						<ul>
+							<li><a href="">Аренда 1-комнатных квартир в Днепропетровске</a></li>
+							<li><a href="">Аренда 2-комнатных квартир в Днепропетровске</a></li>
+							<li><a href="">Аренда 3-комнатных квартир в Днепропетровске</a></li>
+							<li><a href="">Аренда 4-комнатных квартир в Днепропетровске</a></li>
+						</ul>
+					</div>
+					
+					<div class="footer_links medium">
+						<ul class="big_links">
+							<li><a href="">Продажа/Аренда домов  в Днепропетровске</a></li>
+							<li><a href="">Продажа/Аренда коммерческой недвижимости в Днепропетровске</a></li>
+						</ul>
+					</div>
+					<div class="footer_links">
+						<ul>
+							<li><a href="">Продажа/Аренда квартир в Амур-Нижнеднепровском районе в Днепропетровске</a></li>
+							<li><a href="">Продажа/Аренда квартир в Бабушкинском районе в Днепропетровске</a></li>
+							<li><a href="">Продажа/Аренда квартир в Жовтневом районе в Днепропетровске</a></li>
+							<li><a href="">Продажа/Аренда квартир в Индустриальном районе в Днепропетровске</a></li>
+							<li><a href="">Продажа/Аренда квартир в Кировском районе в Днепропетровске</a></li>
+							<li><a href="">Продажа/Аренда квартир в Красногвардейском районе в Днепропетровске</a></li>
+							<li><a href="">Продажа/Аренда квартир в Ленинском районе в Днепропетровске</a></li>
+							<li><a href="">Продажа/Аренда квартир в Самарском районе в Днепропетровске</a></li>
+						</ul>
+					</div>
+					
+					<div class="clearfix"></div>
+					<div class="copyright">
+						Агенство недвижимости в Днепропетровске «Top Estate»
+					</div>
+					
+				</footer>
+			</div>
+		</div>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
