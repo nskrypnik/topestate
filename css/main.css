@@ -8,6 +8,12 @@ body {
 	position: relative;
 }
 
+button.gray {
+}
+
+button.gray span{
+}
+
 
 /*************************************************
 /* Form styles                       
@@ -308,7 +314,7 @@ aside.filter {
 
 .filter .filter_details {
 	padding-left: 37px;
-		font-size: 14px;
+	font-size: 14px;
 }
 
 
@@ -340,6 +346,30 @@ aside.filter {
 .filter .is_new, .filter .is_commercial {
 	font-weight: bold;
 }
+
+.filter .price-range  input[type="text"]{
+	width: 70px;
+	margin: 0 6px;
+}
+
+.filter .price-range{
+	padding-bottom: 16px;
+}
+
+.filter .currency  span{
+	padding-left: 20px;
+	padding-right: 34px;
+	margin-right: 20px;	
+}
+
+.filter .search_by_id  input[type="text"]{
+	width: 220px;
+}
+
+.filter .search_by_id {
+	padding-bottom: 25px;
+}
+
 
 
 /*************************************************

@@ -24,7 +24,11 @@
 			document.body;
 
 			var height = elem.clientHeight;
-			document.write("<style>.slider_wrapper {min-height: " + (height - 149) +"px;}</style>")
+			height = height - 149;
+			if (height < 830){
+				height = 830;
+			}
+			document.write("<style>.slider_wrapper {min-height: " + (height) +"px;}</style>");
 		</script>
     </head>
     <body>
@@ -76,7 +80,7 @@
 				<aside class="filter">
 					<form>
 						<div class="property_type big_radio">
-							<input type="radio" name="property_type" value="rent" id="rent" />
+							<input type="radio" name="property_type" value="rent" id="rent" checked="checked" />
 								<label for="rent"><span>Аренда</span></label>
 							
 							<input type="radio" name="property_type" value="sale" id="sale"/>
@@ -136,13 +140,13 @@
 								от <input type="text" name="price_from"/> до <input type="text" name="price_to"/>
 							</div>
 							
-							<div class="currency">
-								<input type="radio" name="currency" value="usd">
-									<span>USD</span>
-								</input>
-								<input type="radio" name="currency" value="uah">
-									<span>UAH</span>
-								</input>
+							<div class="currency medium_radio">
+								<input type="radio" name="currency" value="usd" id="usd" checked="checked" />
+									<label for="usd"><span>USD</span></label>
+								
+								<input type="radio" name="currency" value="uah" id="uah" />
+									<label for="uah"><span>UAH</span></label>
+								
 							</div>
 							<h3>Поиск по ID</h3>
 							<div class="search_by_id">
@@ -150,7 +154,7 @@
 							</div>
 							
 							<div class="submit_form">
-								<input type="submit" value="Поиск ">
+								<button type="submit" class="gray"><span>Поиск</span></button>
 							</div>
 							
 						</div>
