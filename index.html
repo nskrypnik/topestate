@@ -9,14 +9,21 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+		
+		<!--[if lt IE 8]>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+		<![endif]-->
+		
+		<!--[if lt IE 9]>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<![endif]-->
+		
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-		
 		<!-- expand content for all viewport height -->
 		<script>
 			var elem = (document.compatMode === "CSS1Compat") ? 
@@ -78,7 +85,7 @@
 		<div class="filter_wrapper main_page">
 			<div class="filter_shadow">
 				<aside class="filter">
-					<form>
+					<form name="property_filter">
 						<div class="property_type big_radio">
 							<input type="radio" name="property_type" value="rent" id="rent" checked="checked" />
 								<label for="rent"><span>Аренда</span></label>
@@ -153,10 +160,12 @@
 								<input type="text" name="property_id"/>
 							</div>
 							
-							<div class="submit_form">
-								<button type="submit" class="gray"><span>Поиск</span></button>
-							</div>
-							
+						</div>
+						<div class="submit_form">
+							<!-- <button type="submit" class="gray"><span>Поиск</span></button> -->
+							<a class="submit_link gray_button" href="#" >
+								<span>Поиск</span>
+							</a>
 						</div>
 					</form>
 				</aside>
@@ -219,20 +228,8 @@
 			</div>
 		</div>
 
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
     </body>
 </html>

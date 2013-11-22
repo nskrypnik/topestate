@@ -8,12 +8,56 @@ body {
 	position: relative;
 }
 
-button.gray {
+/* ============ gray button styles ============ */
+
+button > span {position: relative}
+
+a.gray_button {
+	text-decoration: none;
+	color: black;
 }
 
-button.gray span{
+button.gray, a.gray_button{
+	padding: 10px 0 10px 13px;
+	background: url(../img/gray_btn_l.png) no-repeat scroll left center;
+	border: none;
+	outline: none;
 }
 
+button.gray span, a.gray_button span{
+	background: url(../img/gray_btn_r.png) no-repeat scroll right center;
+	padding: 10px 13px 10px 0;
+}
+
+button.gray:active, a.gray_button:active , a.gray_button.active{
+	background: url(../img/gray_btn_pressed_l.png) no-repeat left center;
+}
+
+button.gray:active span, a.gray_button:active span, a.gray_button.active span{
+	background: url(../img/gray_btn_pressed_r.png) no-repeat right center;
+}
+
+/* ============ yellow button styles ============ */
+
+button.yellow, a.yellow_button{
+	padding: 10px 0 10px 14px;
+	background: url(../img/yellow_btn_l.png) no-repeat left center;
+	border: none;
+	outline: none;
+}
+
+button.yellow span, a.yellow_button span{
+	background: url(../img/yellow_btn_r.png) no-repeat right center;
+	padding: 10px 14px 10px 0;
+}
+
+button.yellow:active, a.yellow_button:active, a.yellow_button.active {
+	background: url(../img/yellow_btn_pressed_l.png) no-repeat left center;
+}
+
+button.yellow:active span, a.yellow_button:active span, a.yellow_button.active span{
+	background: url(../img/yellow_btn_pressed_r.png) no-repeat right center;
+}
 
 /*************************************************
 /* Form styles                       
@@ -22,14 +66,6 @@ button.gray span{
 label {
 	display: inline-block;
 }
-
-/*
-.big_radio label:before {  
-    content: "";  
-    display: inline-block;
-	padding-left: 14px;
-	height: 31px;
-}*/
 
 input[type=radio], input[type=checkbox] {
     display: none; 
@@ -47,7 +83,7 @@ input[type=checkbox] + label:before {
 	background: url(../img/checkbox.png) no-repeat left center;
 }
 
-input[type=checkbox]:checked + label:before {
+input[type=checkbox]:checked + label:before, input[type=checkbox] + label.checked:before {
 	background: url(../img/checkbox_pressed.png) no-repeat left center;
 }
 
@@ -71,21 +107,24 @@ input[type=checkbox]:checked + label:before {
 }
 
 .medium_radio label {
-	padding: 6px 0px 6px 9px;
+	padding: 0px 0px 0px 9px;
 	cursor: pointer;
 	font-size: 14px;
 	font-weight: normal;
 }
 
 .medium_radio label  span{
-	padding: 6px 9px 6px 0px;
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	padding-right: 9px;
 }
 
-.medium_radio input[type=radio]:checked + label {
+.medium_radio input[type=radio]:checked + label  {
 	background: url(../img/medium_radio_l.png) no-repeat left center;
 }
 
-.medium_radio input[type=radio]:checked + label span{
+.medium_radio input[type=radio]:checked + label span {
 	background: url(../img/medium_radio_r.png) no-repeat right center;
 }
 
@@ -370,7 +409,13 @@ aside.filter {
 	padding-bottom: 25px;
 }
 
+.filter .submit_form {
+	text-align: center;
+}
 
+.filter .submit_form a span, .filter .submit_form button span{
+	padding: 10px 58px 10px 45px;
+}
 
 /*************************************************
 /* End of Filter styles                       
