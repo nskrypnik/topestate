@@ -12,7 +12,7 @@ body {
 
 button > span {position: relative}
 
-a.gray_button {
+a.gray_button, a.yellow_button {
 	text-decoration: none;
 	color: black;
 }
@@ -440,8 +440,17 @@ aside.filter {
 	margin: 0 auto 0 auto;
 }
 
+.content_wrapper2 {
+	width: 1000px;
+	margin: 0 auto 0 auto;
+}
+
 .content {
+	position: relative;
 	font-family: "Arial", Helvetica, sans-serif;
+	margin-left: 313px;
+	width: 687px;
+	z-index: 400;
 }
 
 .content article {
@@ -464,6 +473,22 @@ aside.filter {
 article.about_us img {
 	border: white solid 7px;
 }
+
+.msg404 {
+	padding-top: 115px;
+	text-align: center;
+	background: url(../img/oops404.png) no-repeat center 75px;
+}
+
+.msg404 p {
+	text-align: center;
+	padding: 0;
+	margin: 20px auto;
+	width: 360px;
+	
+}
+
+
 
 /*************************************************
 /* End of Main content styles                       

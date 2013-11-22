@@ -1,157 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>Page Not Found :(</title>
-        <style>
-            ::-moz-selection {
-                background: #b3d4fc;
-                text-shadow: none;
-            }
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--[if lt IE 8]>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+		<![endif]-->
+		
+		<!--[if lt IE 9]>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<![endif]-->
+		
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-            ::selection {
-                background: #b3d4fc;
-                text-shadow: none;
-            }
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<!-- expand content for all viewport height -->
+		<script>
+			function page_on_resize(){
+				var elem = (document.compatMode === "CSS1Compat") ? 
+				document.documentElement :
+				document.body;
 
-            html {
-                padding: 30px 10px;
-                font-size: 20px;
-                line-height: 1.4;
-                color: #737373;
-                background: #f0f0f0;
-                -webkit-text-size-adjust: 100%;
-                -ms-text-size-adjust: 100%;
-            }
-
-            html,
-            input {
-                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            }
-
-            body {
-                max-width: 500px;
-                _width: 500px;
-                padding: 30px 20px 50px;
-                border: 1px solid #b3b3b3;
-                border-radius: 4px;
-                margin: 0 auto;
-                box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
-                background: #fcfcfc;
-            }
-
-            h1 {
-                margin: 0 10px;
-                font-size: 50px;
-                text-align: center;
-            }
-
-            h1 span {
-                color: #bbb;
-            }
-
-            h3 {
-                margin: 1.5em 0 0.5em;
-            }
-
-            p {
-                margin: 1em 0;
-            }
-
-            ul {
-                padding: 0 0 0 40px;
-                margin: 1em 0;
-            }
-
-            .container {
-                max-width: 380px;
-                _width: 380px;
-                margin: 0 auto;
-            }
-
-            /* google search */
-
-            #goog-fixurl ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            #goog-fixurl form {
-                margin: 0;
-            }
-
-            #goog-wm-qt,
-            #goog-wm-sb {
-                border: 1px solid #bbb;
-                font-size: 16px;
-                line-height: normal;
-                vertical-align: top;
-                color: #444;
-                border-radius: 2px;
-            }
-
-            #goog-wm-qt {
-                width: 220px;
-                height: 20px;
-                padding: 5px;
-                margin: 5px 10px 0 0;
-                box-shadow: inset 0 1px 1px #ccc;
-            }
-
-            #goog-wm-sb {
-                display: inline-block;
-                height: 32px;
-                padding: 0 10px;
-                margin: 5px 0 0;
-                white-space: nowrap;
-                cursor: pointer;
-                background-color: #f5f5f5;
-                background-image: -webkit-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                background-image: -moz-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                background-image: -ms-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                background-image: -o-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                *overflow: visible;
-                *display: inline;
-                *zoom: 1;
-            }
-
-            #goog-wm-sb:hover,
-            #goog-wm-sb:focus {
-                border-color: #aaa;
-                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-                background-color: #f8f8f8;
-            }
-
-            #goog-wm-qt:hover,
-            #goog-wm-qt:focus {
-                border-color: #105cb6;
-                outline: 0;
-                color: #222;
-            }
-
-            input::-moz-focus-inner {
-                padding: 0;
-                border: 0;
-            }
-        </style>
+				var height = elem.clientHeight;
+				document.write("<style>.content_wrapper {min-height: " + (height - 173) +"px;}</style>");
+			}
+			page_on_resize();
+		</script>
     </head>
     <body>
-        <div class="container">
-            <h1>Not found <span>:(</span></h1>
-            <p>Sorry, but the page you were trying to view does not exist.</p>
-            <p>It looks like this was the result of either:</p>
-            <ul>
-                <li>a mistyped address</li>
-                <li>an out-of-date link</li>
-            </ul>
-            <script>
-                var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
-            </script>
-            <script src="//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
-        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Site applicaiton goes here -->
+		<div class="header_wrapper">
+			<header>
+				<!-- Main logo goes here -->
+				<div class="main_logo"><a href="index.html"><img src="img/head_logo.png" /></a></div>
+				<div class="header_right"> <!-- header_right -->
+					<div class="header_info"> <!-- header_info -->
+						<div class="header_caption">
+							<h2>Агентство недвижимости в Днепропетровске</h2>
+						</div>
+						<div class="header_phones">
+							<p>
+								097  321 68 31<br />
+								063  697 76 76<br />
+								067  955 00 50
+							</p>
+						</div>
+						<div class="header_contact_info">
+							<div class="address">ул. Демьяна Бедного, 15 </div>
+							<div class="email">topestate.dp.ua@gmail.com</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<nav> <!-- header navigation links -->
+						<ul>
+							<li><a href="sale.html"><span>Продажа</span></a></li>
+							<li><a href="rent.html"><span>Аренда</span></a></li>
+							<li><a href="featured.html" class="current"><span>Свежие предложения</span></a></li>
+							<li><a href="notepad.html"><span>Блокнот</span></a></li>
+							<li><a href="faq.html"><span>Полезно знать</span></a></li>
+							<li><a href="aboutus.html"><span>О нас</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div clss="clearfix"></div>
+			</header>
+		</div>
+		
+		<!-- Filter markup -->
+		<div class="filter_wrapper">
+			<div class="filter_shadow">
+				<aside class="filter">
+					<form name="property_filter">
+						<div class="property_type big_radio">
+							<input type="radio" name="property_type" value="rent" id="rent" checked="checked" />
+								<label for="rent"><span>Аренда</span></label>
+							
+							<input type="radio" name="property_type" value="sale" id="sale"/>
+								<label for="sale"><span>Продажа</span></label>
+
+						</div>
+						<div class="filter_details">
+							<!-- choose rooms count -->
+							<h3>Количество комнат</h3>
+							<div class="rooms_count circle_radio">
+								<input type="radio" name="rooms_count" value="1" id="rooms_1" />
+									<label for="rooms_1"><span>1</span></label>
+
+								<input type="radio" name="rooms_count" value="2" id="rooms_2" />
+									<label for="rooms_2"><span>2</span></label>
+								<input type="radio" name="rooms_count" value="3" id="rooms_3" />
+									<label for="rooms_3"><span>3</span></label>
+								<input type="radio" name="rooms_count" value="4" id="rooms_4" />
+									<label for="rooms_4"><span>4</span></label>
+								<input type="radio" name="rooms_count" value="5" id="rooms_5" />
+									<label for="rooms_5"><span>5+</span></label>
+								<input type="radio" name="rooms_count" value="6" id="rooms_6" />
+									<label for="rooms_6"><span>Дом</span></label>
+							</div>
+							<div class="is_new">
+								<input type="checkbox" name="is_new" id="is_new"/> <label for="is_new">Новострой</label>
+							</div>
+							<div class="is_commercial">
+								<input type="checkbox" name="is_commercial" id="is_commercial" /><label for="is_commercial">Коммерческая недвижимость</label>
+							</div>
+							<h3>Район</h3>
+							<!-- choose river side -->
+							<div class="river_side medium_radio">
+								<input type="radio" name="river_side" value="left" id="left" />
+									<label for="left"><span>Левый берег</span></label>
+								<input type="radio" name="river_side" value="right" id="right" />
+									<label for="right"><span>Правый берег</span></label>
+							</div>
+							<!-- choose area -->
+							<div class="area">
+								<ul>
+									<li><input type="checkbox" name="" id="area1" /><label for="area1">Гагарина - Подстанция</label></li>
+									<li><input type="checkbox" name="" id="area2" /><label for="area2">Центр-Нагорка</label></li>
+									<li><input type="checkbox" name="" id="area3" /><label for="area3">Победа 1 - 6</label></li>
+									<li><input type="checkbox" name="" id="area4" /><label for="area4">Тополь - Сокол</label></li>
+									<li><input type="checkbox" name="" id="area5" /><label for="area5">Г. Сталинграда - 12 квартал</label></li>
+									<li><input type="checkbox" name="" id="area6" /><label for="area6">Рабочая - Титова</label></li>
+									<li><input type="checkbox" name="" id="area7" /><label for="area7">Кирова - Пушкина</label></li>
+									<li><input type="checkbox" name="" id="area8" /><label for="area8">Коммунар - Кр. Камень - Парус</label></li>
+									<li><input type="checkbox" name="" id="area9" /><label for="area9">Петровского - Западный</label></li>
+									<li><input type="checkbox" name="" id="area10" /><label for="area10">Пригород</label></li>
+								</ul>
+							</div>
+							
+							<h3>Цена</h3>
+							<div class="price-range">
+								от <input type="text" name="price_from"/> до <input type="text" name="price_to"/>
+							</div>
+							
+							<div class="currency medium_radio">
+								<input type="radio" name="currency" value="usd" id="usd" checked="checked" />
+									<label for="usd"><span>USD</span></label>
+								
+								<input type="radio" name="currency" value="uah" id="uah" />
+									<label for="uah"><span>UAH</span></label>
+								
+							</div>
+							<h3>Поиск по ID</h3>
+							<div class="search_by_id">
+								<input type="text" name="property_id"/>
+							</div>
+							
+						</div>
+						<div class="submit_form">
+							<!-- <button type="submit" class="gray"><span>Поиск</span></button> -->
+							<a class="submit_link gray_button" href="#" >
+								<span>Поиск</span>
+							</a>
+						</div>
+					</form>
+				</aside>
+			</div>
+		</div>
+		<!-- End of Filter markup -->
+		
+		<div class="content_wrapper">
+			<div class="content_wrapper2">
+				<div class="content">
+					<div class="msg404">
+						<p>По вашему запросу ничего не найдено! <br />
+							Пойжалуйста, попробуйте позже <br />
+							или оставьте заявку на поиск варианта.
+						</p>
+						<a href="" class="yellow_button"><span>Оставить заявку на поиск варианта</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer_wrapper">
+			<div class="footer_wrapper2">
+				<footer>
+					<div class="copyright">
+						Агенство недвижимости в Днепропетровске «Top Estate»
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

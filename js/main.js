@@ -1,6 +1,10 @@
 
-
-// Pseudoclasses fix for ie8
+/*
+var resizeTimer;
+$(window).resize(function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(page_on_resize, 500);
+});*/
 
 $('a').mousedown(function(){
 	$(this).addClass('active');

@@ -26,16 +26,19 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<!-- expand content for all viewport height -->
 		<script>
-			var elem = (document.compatMode === "CSS1Compat") ? 
-			document.documentElement :
-			document.body;
+			function page_on_resize(){
+				var elem = (document.compatMode === "CSS1Compat") ? 
+				document.documentElement :
+				document.body;
 
-			var height = elem.clientHeight;
-			height = height - 149;
-			if (height < 830){
-				height = 830;
-			}
-			document.write("<style>.slider_wrapper {min-height: " + (height) +"px;}</style>");
+				var height = elem.clientHeight;
+				height = height - 149;
+				if (height < 830){
+					height = 830;
+				}
+				document.write("<style>.slider_wrapper {min-height: " + (height) +"px;}</style>");
+			};
+			page_on_resize();
 		</script>
     </head>
     <body>
