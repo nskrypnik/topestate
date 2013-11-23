@@ -23,9 +23,13 @@
 				var elem = (document.compatMode === "CSS1Compat") ? 
 				document.documentElement :
 				document.body;
-
+				
 				var height = elem.clientHeight;
-				document.write("<style>.content_wrapper {min-height: " + (height - 173) +"px;}</style>");
+				height = height - 173;
+				if (height < 830){
+					height = 830;
+				}
+				document.write("<style>.content_wrapper {min-height: " + height +"px;}</style>");
 			}
 			page_on_resize();
 		</script>

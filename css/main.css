@@ -453,21 +453,32 @@ aside.filter {
 	z-index: 400;
 }
 
-.content article {
+.content.wide article {
 	padding-top: 16px;
 }
 
-.content article h1{
+.content.wide article h1{
 	font-size: 18px;
 	padding: 16px 0 16px 0;
 	margin: 0;
 }
 
-.content article p {
+.content.wide article p {
 	font-size: 12px;
 	line-height: 26px;
 	padding: 16px 0 16px 0;
 	margin: 0;
+}
+
+.content.listing {
+	padding-left: 35px;
+}
+
+.content.listing h1{
+	padding: 20px 0;
+	margin: 0;
+	font-weight: normal;
+	font-size: 24px;
 }
 
 article.about_us img {
@@ -487,7 +498,6 @@ article.about_us img {
 	width: 360px;
 	
 }
-
 
 
 /*************************************************
