@@ -90,7 +90,7 @@ textarea {
  * Address margins handled incorrectly in IE 6/7.
  */
 
-body, header, aside, nav{
+body, header, aside, nav, article{
     margin: 0;
 	padding: 0;
 }
