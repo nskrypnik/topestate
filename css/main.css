@@ -489,6 +489,12 @@ aside.filter {
 	text-decoration: none;
 }
 
+.content.listing .view_mode a{
+	color: transparent;
+	font-size: 0;
+	line-height: 0;
+}
+
 .content.listing .view_mode span{
 	cursor: pointer;
 	display: block;
@@ -548,6 +554,16 @@ aside.filter {
 	min-height: 170px;
 }
 
+.sign_type .item_wrapper {
+	float: left;
+	width: 300px;
+	height: 365px;
+}
+
+.listing_container.sign_type {
+	width: 676px;
+}
+
 .item_photo {
 	height: 170px;
 	width: 300px;
@@ -571,6 +587,11 @@ aside.filter {
 	margin-right: 20px;
 }
 
+.sign_type .item_photo {
+	margin: 0;
+	padding: 0;
+}
+
 .list_type .item_details {
 	padding-left: 320px;
 	padding-right: 15px;
@@ -580,6 +601,10 @@ aside.filter {
 	margin: 0;
 	padding: 5px 0 15px 0;
 	font-size: 18px;
+}
+
+.sign_type .item_details h2 {
+	padding: 15px 0 15px 0;
 }
 
 .item_details h2 a{
@@ -610,7 +635,16 @@ aside.filter {
 	margin-right: 30px;
 }
 
-.list_type .item_controls li:last-child, li.last-child {
+.sign_type .item_controls {
+	padding-top: 10px;
+}
+
+.sign_type .item_controls li {
+	margin-right: 15px;
+}
+
+.list_type .item_controls li:last-child, .list_type .item_controls li.last-child,
+.sign_type .item_controls li:last-child, .sign_type .item_controls li.last-child {
 	margin-right: 0;
 }
 
@@ -628,6 +662,14 @@ aside.filter {
 	padding-bottom: 10px;
 	margin-bottom: 15px;
 	background: transparent url(../img/listing_list_shadow.png) no-repeat center bottom;
+}
+
+.listing_container.sign_type article{
+	float: left;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	margin-right: 12px;
+	background: transparent url(../img/listing_sign_shadow.png) no-repeat center bottom;
 }
 
 .item_label {
