@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--[if lt IE 8]>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+		<![endif]-->
+		
+		<!--[if lt IE 9]>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<![endif]-->
+		
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<!-- expand content for all viewport height -->
+		<script>
+			function page_on_resize(){
+				var elem = (document.compatMode === "CSS1Compat") ? 
+				document.documentElement :
+				document.body;
+				
+				var height = elem.clientHeight;
+				height = height - 173;
+				if (height < 830){
+					height = 830;
+				}
+				document.write("<style>.content_wrapper {min-height: " + height +"px;}</style>");
+			}
+			page_on_resize();
+		</script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Site applicaiton goes here -->
+		<div class="header_wrapper">
+			<header>
+				<!-- Main logo goes here -->
+				<div class="main_logo"><a href="index.html"><img src="img/head_logo.png" /></a></div>
+				<div class="header_right"> <!-- header_right -->
+					<div class="header_info"> <!-- header_info -->
+						<div class="header_caption">
+							<h2>Агентство недвижимости в Днепропетровске</h2>
+						</div>
+						<div class="header_phones">
+							<p>
+								097  321 68 31<br />
+								063  697 76 76<br />
+								067  955 00 50
+							</p>
+						</div>
+						<div class="header_contact_info">
+							<div class="address">ул. Демьяна Бедного, 15 </div>
+							<div class="email">topestate.dp.ua@gmail.com</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<nav> <!-- header navigation links -->
+						<ul>
+							<li><a href="sale.html"><span>Продажа</span></a></li>
+							<li><a href="rent.html"><span>Аренда</span></a></li>
+							<li><a href="featured.html" class="current"><span>Свежие предложения</span></a></li>
+							<li><a href="notepad.html"><span>Блокнот</span></a></li>
+							<li><a href="faq.html"><span>Полезно знать</span></a></li>
+							<li><a href="aboutus.html"><span>О нас</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div clss="clearfix"></div>
+			</header>
+		</div>
+		
+		<!-- Filter markup -->
+		<div class="filter_wrapper">
+			<div class="filter_shadow">
+				<aside class="filter">
+					<form name="property_filter">
+						<div class="property_type big_radio">
+							<input type="radio" name="property_type" value="rent" id="rent" checked="checked" />
+								<label for="rent"><span>Аренда</span></label>
+							
+							<input type="radio" name="property_type" value="sale" id="sale"/>
+								<label for="sale"><span>Продажа</span></label>
+
+						</div>
+						<div class="filter_details">
+							<!-- choose rooms count -->
+							<h3>Количество комнат</h3>
+							<div class="rooms_count circle_radio">
+								<input type="radio" name="rooms_count" value="1" id="rooms_1" />
+									<label for="rooms_1"><span>1</span></label>
+
+								<input type="radio" name="rooms_count" value="2" id="rooms_2" />
+									<label for="rooms_2"><span>2</span></label>
+								<input type="radio" name="rooms_count" value="3" id="rooms_3" />
+									<label for="rooms_3"><span>3</span></label>
+								<input type="radio" name="rooms_count" value="4" id="rooms_4" />
+									<label for="rooms_4"><span>4</span></label>
+								<input type="radio" name="rooms_count" value="5" id="rooms_5" />
+									<label for="rooms_5"><span>5+</span></label>
+								<input type="radio" name="rooms_count" value="6" id="rooms_6" />
+									<label for="rooms_6"><span>Дом</span></label>
+							</div>
+							<div class="is_new">
+								<input type="checkbox" name="is_new" id="is_new"/> <label for="is_new">Новострой</label>
+							</div>
+							<div class="is_commercial">
+								<input type="checkbox" name="is_commercial" id="is_commercial" /><label for="is_commercial">Коммерческая недвижимость</label>
+							</div>
+							<h3>Район</h3>
+							<!-- choose river side -->
+							<div class="river_side medium_radio">
+								<input type="radio" name="river_side" value="left" id="left" />
+									<label for="left"><span>Левый берег</span></label>
+								<input type="radio" name="river_side" value="right" id="right" />
+									<label for="right"><span>Правый берег</span></label>
+							</div>
+							<!-- choose area -->
+							<div class="area">
+								<ul>
+									<li><input type="checkbox" name="" id="area1" /><label for="area1">Гагарина - Подстанция</label></li>
+									<li><input type="checkbox" name="" id="area2" /><label for="area2">Центр-Нагорка</label></li>
+									<li><input type="checkbox" name="" id="area3" /><label for="area3">Победа 1 - 6</label></li>
+									<li><input type="checkbox" name="" id="area4" /><label for="area4">Тополь - Сокол</label></li>
+									<li><input type="checkbox" name="" id="area5" /><label for="area5">Г. Сталинграда - 12 квартал</label></li>
+									<li><input type="checkbox" name="" id="area6" /><label for="area6">Рабочая - Титова</label></li>
+									<li><input type="checkbox" name="" id="area7" /><label for="area7">Кирова - Пушкина</label></li>
+									<li><input type="checkbox" name="" id="area8" /><label for="area8">Коммунар - Кр. Камень - Парус</label></li>
+									<li><input type="checkbox" name="" id="area9" /><label for="area9">Петровского - Западный</label></li>
+									<li><input type="checkbox" name="" id="area10" /><label for="area10">Пригород</label></li>
+								</ul>
+							</div>
+							
+							<h3>Цена</h3>
+							<div class="price-range">
+								от <input type="text" name="price_from"/> до <input type="text" name="price_to"/>
+							</div>
+							
+							<div class="currency medium_radio">
+								<input type="radio" name="currency" value="usd" id="usd" checked="checked" />
+									<label for="usd"><span>USD</span></label>
+								
+								<input type="radio" name="currency" value="uah" id="uah" />
+									<label for="uah"><span>UAH</span></label>
+								
+							</div>
+							<h3>Поиск по ID</h3>
+							<div class="search_by_id">
+								<input type="text" name="property_id"/>
+							</div>
+							
+						</div>
+						<div class="submit_form">
+							<!-- <button type="submit" class="gray"><span>Поиск</span></button> -->
+							<a class="submit_link gray_button" href="#" >
+								<span>Поиск</span>
+							</a>
+						</div>
+					</form>
+				</aside>
+			</div>
+		</div>
+		<!-- End of Filter markup -->
+		
+		<div class="content_wrapper">
+			<div class="content_wrapper2">
+				<div class="content listing">
+					<h1>Продажа квартир в Днепропетровске</h1>
+					<div class="toolbar">
+						<div class="view_mode">
+							<a href=""><span class="signs"></span></a>
+							<a href=""><span class="list selected"></span></a>
+						</div>
+						<div class="ordering"><strong>Сортировать:</strong>   <a href="">по дате</a> <a href="">по цене</a></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="listing_container list_type">
+						<!-- Begin of listing article -->
+						<article>
+							
+							<div class="item_wrapper">
+								<div class="item_label new"></div>
+								<div class="item_photo"><a href=""><img src="img/listing1.png" width="300px" height="170px" /></a></div>
+								<div class="item_details">
+									<h2 class="item_title">
+										<a href="">Продам 1-комнатную квартиру  на 12-квартале</a>
+									</h2>
+									<p class="price"> Цена: <strong>240 000 грн (~ $ 30 000)</strong></p>
+									<p class="address">Адрес: <strong>Героев Сталинграда/Казакевича</strong></p>
+									<p class="floor">Этаж: <strong>3</strong></p>
+									<div class="item_controls">
+										<ul>                        
+											<li><a href="">Добавить в блокнот</a></li>
+											<li><a href="">Хочу посмотреть</a></li>
+											<li class="last_child"><a href="">Подробнее...</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</article>
+						<!-- End of listing article -->
+						<!-- Begin of listing article -->
+						<article>
+							<div class="item_wrapper">
+								<div class="fieatured"></div>
+								<div class="item_photo"><a href=""><img src="img/listing2.png" width="300px" height="170px" /></a></div>
+								<div class="item_details">
+									<h2 class="item_title">
+										<a href="">Продам 1-комнатную квартиру  на 12-квартале</a>
+									</h2>
+									<p class="price"> Цена: <strong>240 000 грн (~ $ 30 000)</strong></p>
+									<p class="address">Адрес: <strong>Героев Сталинграда/Казакевича</strong></p>
+									<p class="floor">Этаж: <strong>3</strong></p>
+									<div class="item_controls">
+										<ul>                        
+											<li><a href="">Добавить в блокнот</a></li>
+											<li><a href="">Хочу посмотреть</a></li>
+											<li class="last_child"><a href="">Подробнее...</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</article>
+						<!-- End of listing article -->
+					</div>
+					<div class="listing_paginator">
+						<a href="" class="arrow"><span>&larr;</span></a>
+						<span class="current">1</span>
+						<a href=""><span>2</span></a>
+						<a href=""><span>3</span></a>
+						<span>...</span>
+						<a href=""><span>13</span></a>
+						<a href=""><span>14</span></a>
+						<a href=""><span>15</span></a>
+						<a href="" class="arrow"><span>&rarr;</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer_wrapper">
+			<div class="footer_wrapper2">
+				<footer>
+					<div class="copyright">
+						Агенство недвижимости в Днепропетровске «Top Estate»
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
