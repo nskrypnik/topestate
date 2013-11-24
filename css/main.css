@@ -807,6 +807,70 @@ article.about_us img {
 	font-size: 14px;
 } 
 
+.property_details .controls {
+	padding: 25px 0;
+}
+
+.property_details .featured  h2{
+	padding: 0 0 20px 0;
+	margin: 0;
+	font-size: 18px;
+}
+
+.listing_container.featured {
+	width: 672px;
+	padding-bottom: 15px;
+}
+
+.listing_container.featured  article{
+	float: left;
+    margin-bottom: 10px;
+    margin-right: 14px;
+    padding-bottom: 10px;
+	background: transparent url(../img/listing_featured_shadow.png) no-repeat center bottom;
+}
+
+.listing_container.featured .item_wrapper {
+	width: 190px;
+	padding: 10px;
+}
+
+.listing_container.featured .item_photo {
+	width: 190px;
+	height: 107px;
+}
+
+.listing_container.featured h2 {
+	font-size: 12px;
+	padding-top: 7px;
+	padding-bottom: 0;
+}
+
+.listing_container.featured p {
+	padding: 0;
+	margin; 0;
+	font-size: 10px;
+}
+
+.listing_container.featured p.property_id {
+	padding-bottom: 10px;
+}
+
+.listing_container.featured p.phone {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.listing_container.featured .item_controls li {
+	margin-right: 18px;
+}
+
+.listing_container.featured .item_controls li:last-child,
+.listing_container.featured .item_controls li.last-child{
+	margin-right: 0;
+}
+
+
 .msg404 {
 	padding-top: 115px;
 	text-align: center;
