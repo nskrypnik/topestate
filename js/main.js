@@ -1,10 +1,13 @@
 
-/*
-var resizeTimer;
-$(window).resize(function() {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(page_on_resize, 500);
-});*/
+//This is an IE fix because pointer-events does not work in IE
+
+$(document).on('click', '.item_label, .loupe', function (e) {
+	$(this).hide();
+	var BottomElement = document.elementFromPoint(e.clientX, e.clientY);
+	$(this).show();
+	$(BottomElement).click(); //Manually fire the event for desired underlying element
+	return false;
+});
 
 $('a').mousedown(function(){
 	$(this).addClass('active');

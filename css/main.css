@@ -675,6 +675,7 @@ aside.filter {
 .item_label {
 	width: 127px;
 	height: 128px;
+	cursor: pointer;
 	pointer-events: none;
 	position: absolute;
 	margin: -17px 0 0 -17px;
@@ -724,6 +725,87 @@ article.about_us img {
 	margin-right: 32px;
 	font-weight: bold;
 }
+
+.property_details article .photo {
+	float: left;
+	width: 430px;
+	margin-right: 18px;
+	position: relative;
+}
+
+.property_details article .photo  a {
+	border: none;
+	outline: none;
+	margin: 0; padding: 0;
+}
+
+.property_details article .photo img {
+	background-color: white;
+	padding: 10px;
+	width: 410px;
+	position: relative;
+}
+
+.property_details article .photo .loupe {
+	position: absolute;
+	pointer-events: none;
+	cursor: pointer;
+	background: transparent url(../img/slideshow.png) no-repeat center center;
+	margin: 10px;
+	width: 410px;
+	height: 254px;
+	z-index: 600;
+}
+
+.property_details article .photo_controls {
+	text-align: center;
+	padding: 18px 140px 12px 140px;
+	padding-bottom: 12px;
+}
+
+.property_details article .photo_controls span.rarr,
+.property_details article .photo_controls span.larr{
+	display: block;
+	width: 32px; height: 32px;
+}
+
+.property_details article .photo_controls span.rarr a,
+.property_details article .photo_controls span.larr a {
+		width: 32px; height: 32px;
+		display: block;
+		color: transparent;
+		font-size: 0;
+		line-height: 0;
+}
+
+.property_details article .photo_controls span.rarr {
+	float: right;
+	background: transparent url(../img/slide_photo_r.png) no-repeat center center;
+}
+
+.property_details article .photo_controls span.larr {
+	float: left;
+	background: transparent url(../img/slide_photo_l.png) no-repeat center center;
+}
+
+.property_details article .photo_controls span.photo_page {
+	font-size: 18px;
+	line-height: 32px;
+}
+
+.property_details article .info {
+	padding-left: 440px;
+}
+
+.property_details article .info p{
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+}
+
+.property_details article .description {
+	font-size: 14px;
+} 
 
 .msg404 {
 	padding-top: 115px;
