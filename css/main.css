@@ -469,12 +469,12 @@ aside.filter {
 	margin: 0;
 }
 
-.content.listing {
+.content.listing, .content.property_details {
 	padding-left: 35px;
 	width: 652px;
 }
 
-.content.listing h1{
+.content.listing h1, .content.property_details h1{
 	padding: 20px 0;
 	margin: 0;
 	font-weight: normal;
@@ -714,6 +714,15 @@ aside.filter {
 
 article.about_us img {
 	border: white solid 7px;
+}
+
+.property_details .controls {
+	padding: 5px 0 5px 0;
+}
+
+.property_details .controls a {
+	margin-right: 32px;
+	font-weight: bold;
 }
 
 .msg404 {
