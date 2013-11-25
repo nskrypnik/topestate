@@ -434,7 +434,7 @@ aside.filter {
 	background: url(../img/content_bg.png) no-repeat bottom right;
 }
 
-.content.wide {
+.content.wide, .content.faq {
 	width: 1000px;
 	margin: 0 auto 0 auto;
 }
@@ -889,10 +889,130 @@ article.about_us img {
 	text-align: center;
 	padding: 0;
 	margin: 20px auto;
-	width: 360px;
+	width: 360px;	
+}
+
+.page_title {
+	height: 85px;
+	text-align: center;
+}
+
+.page_title h1 {
+	font-size: 24px;
+	margin: 0;
+	padding: 20px 0 0 0;
 	
 }
 
+aside.faq_navigation {
+	width: 320px;
+	margin-right: 20px;
+	/*margin-top: 85px;*/
+	float: left;
+}
+
+aside.faq_navigation ul.top {
+	list-style: none outside none;
+	padding: 0; margin: 0;
+}
+
+aside.faq_navigation ul.top li {
+	padding: 6px 0 10px 30px;
+}
+
+li.key_sign {
+	background: url(../img/faq/key.png) no-repeat 5px 7px;
+}
+
+li.key_sign.current {
+	background: #3e3e3e url(../img/faq/key_active.png) no-repeat 5px 7px;
+}
+
+li.dollar_sign {
+	background: url(../img/faq/dollar.png) no-repeat 5px 7px;
+}
+
+li.dollar_sign.current {
+	background: #3e3e3e url(../img/faq/dollar_active.png) no-repeat 5px 7px;
+}
+
+li.load_sign {
+	background: url(../img/faq/load.png) no-repeat 5px 7px;
+}
+
+li.load_sign.current {
+	background: #3e3e3e url(../img/faq/load_active.png) no-repeat 5px 7px;
+}
+
+li.vip_sign {
+	background: url(../img/faq/vip.png) no-repeat 5px 7px;
+}
+
+li.vip_sign.current {
+	background: #3e3e3e url(../img/faq/vip_active.png) no-repeat 5px 7px;
+}
+
+li.info_sign {
+	background: url(../img/faq/info.png) no-repeat 5px 7px;
+}
+
+li.info_sign.current {
+	background: #3e3e3e url(../img/faq/info_active.png) no-repeat 5px 7px;
+}
+
+aside.faq_navigation a {
+	font-size: 12px;
+	color: #3e3e3e;
+}
+
+aside.faq_navigation li.current a {
+	color: #dfdfdf;
+}
+
+
+aside.faq_navigation ul.sub{
+	list-style: none outside none;
+	padding: 0;
+	margin: 0;
+}
+
+aside.faq_navigation ul.sub li {
+	padding: 12px 0 0px 30px;
+	background: url(../img/li_circle.png) no-repeat  18px 22px;
+}
+
+article.faq {
+	padding: 0 0 0 340px;
+}
+
+article.faq h2 {
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-size: 18px;
+}
+
+article.faq p {
+	margin: 0;
+	padding: 10px 0;
+	font-size: 14px;
+}
+
+article.faq ul {
+	list-style: none outside none;
+	padding: 10px 0;
+	margin: 0;
+	font-size: 14px;
+}
+
+article.faq ul li {
+	padding: 0 0 0px 16px;
+	background: url(../img/li_circle.png) no-repeat 5px 6px;
+}
+
+article.faq a {
+	color: black;
+	text-decoration: none;
+}
 
 /*************************************************
 /* End of Main content styles                       
