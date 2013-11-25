@@ -599,12 +599,16 @@ aside.filter {
 
 .item_details h2 {
 	margin: 0;
-	padding: 5px 0 15px 0;
+	padding: 0 0 15px 0;
 	font-size: 18px;
 }
 
+.sign_type .item_details {
+	margin-top: 15px;
+}
+
 .sign_type .item_details h2 {
-	padding: 15px 0 15px 0;
+	padding: 0 0 15px 0;
 }
 
 .item_details h2 a{
@@ -615,6 +619,10 @@ aside.filter {
 	margin: 0;
 	padding: 5px 0;
 	font-size: 12px;
+}
+
+.item_wrapper.in_notebook .item_details {
+	background: url(../img/in_notebook.png) no-repeat right top;
 }
 
 .item_controls {
