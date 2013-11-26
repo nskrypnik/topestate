@@ -1018,6 +1018,12 @@ article.faq a {
 	text-decoration: none;
 }
 
+#inquery_form {
+	width: 280px;
+	height: 631px;
+	background: url(../img/inquery_bg.png) no-repeat top left;
+}
+
 /*************************************************
 /* End of Main content styles                       
 /************************************************/

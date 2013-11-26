@@ -23,6 +23,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<!-- expand content for all viewport height -->
 		<script>
@@ -213,7 +214,7 @@
 					</article>
 					<div class="controls">
 						<a href="" class="gray_button"><span>Добавить в блокнот</span></a>
-						<a href="" class="yellow_button"><span>Оставить заявку на просмотр</span></a>
+						<a href="#inquery_form" class="yellow_button inquery"><span>Оставить заявку на просмотр</span></a>
 					</div>
 					
 					<div class="featured">
@@ -304,8 +305,13 @@
 				</footer>
 			</div>
 		</div>
+		
+		<div id="inquery_form" style="display: none">
+			
+		</div>
 
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		<script src="js/jquery.fancybox.pack.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>

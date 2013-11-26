@@ -1,4 +1,25 @@
 
+$(document).ready(function() {
+	$(".inquery").fancybox({
+		maxWidth	: 280,
+		maxHeight	: 631,
+		fitToView	: true,
+		scrolling   : false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		autoResize   : false,
+		closeClick	: false,
+		closeBtn: false,
+		padding: 0,
+		helpers : {
+			overlay : {
+				locked : false
+			}
+		}
+	});
+});
+
 //This is an IE fix because pointer-events does not work in IE
 
 $(document).on('click', '.item_label, .loupe', function (e) {
