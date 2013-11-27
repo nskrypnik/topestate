@@ -143,6 +143,7 @@ input[type=checkbox]:checked + label, input[type=checkbox] + label.checked {
 	padding-top: 8px;
 	background: url(../img/circle_radio.png) no-repeat center center;
 	font-size: 12px;
+	font-weight: bold;
 }
 
 .circle_radio input[type=radio]:checked + label span{
@@ -314,7 +315,7 @@ nav a.current span{
 
 .filter_shadow {
 	position: relative;
-	width: 308px;
+	width: 310px;
 	float: left;
 	height: 100%;
 	padding-left: 5px;
@@ -331,6 +332,7 @@ nav a.current span{
 }
 
 aside.filter {
+	font-family: "Arial", Helvetica, sans-serif;
 	background-color: #EBEBEB;
 	width: 302px;
 	height: 100%;
@@ -503,19 +505,19 @@ aside.filter {
 }
 
 .content.listing .view_mode span.list {
-	background: url(../img/list_mode.png) no-repeat center center;
-}
-
-.content.listing .view_mode span.list.selected {
 	background: url(../img/list_mode_selected.png) no-repeat center center;
 }
 
+.content.listing .view_mode span.list.selected {
+	background: url(../img/list_mode.png) no-repeat center center;
+}
+
 .content.listing .view_mode span.signs {
-	background: url(../img/sign_mode.png) no-repeat center center;
+	background: url(../img/sign_mode_selected.png) no-repeat center center;
 }
 
 .content.listing .view_mode span.signs.selected {
-	background: url(../img/sign_mode_selected.png) no-repeat center center;
+	background: url(../img/sign_mode.png) no-repeat center center;
 }
 
 .content.listing .ordering {
@@ -752,15 +754,23 @@ article.about_us img {
 	position: relative;
 }
 
-.property_details article .photo .loupe {
+.property_details article .image_container {
+	position: relative;
+}
+
+.property_details article .image_container .loupe {
 	position: absolute;
 	pointer-events: none;
 	cursor: pointer;
-	background: transparent url(../img/slideshow.png) no-repeat center center;
 	margin: 10px;
 	width: 410px;
 	height: 254px;
 	z-index: 600;
+}
+
+.property_details article .image_container .loupe:hover,
+.property_details article .image_container:hover .loupe {
+	background: transparent url(../img/slideshow.png) no-repeat center center;
 }
 
 .property_details article .photo_controls {
