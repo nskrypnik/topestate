@@ -131,11 +131,6 @@ input[type=checkbox]:checked + label, input[type=checkbox] + label.checked {
 	background: url(../img/medium_radio_r.png) no-repeat right center;
 }
 
-
-
-
-
-
 .circle_radio label{
 	cursor: pointer
 }
@@ -388,8 +383,8 @@ aside.filter {
 	font-weight: bold;
 }
 
-.filter .price-range  input[type="text"]{
-	width: 70px;
+.price-range  input[type="text"]{
+	width: 70px !important;
 	margin: 0 6px;
 }
 
@@ -1025,6 +1020,46 @@ article.faq a {
 	font-family: "Arial", Helvetica, sans-serif;
 }
 
+#request_form{
+	width: 580px;
+	height: 710px;
+	padding: 0 30px 0 30px;
+	background: url(../img/request_form.png) no-repeat top left;
+	font-family: "Arial", Helvetica, sans-serif;
+}
+
+#request_form .leftpanel {
+	width: 230px;
+	float: left;
+}
+
+#request_form .rightpanel {
+	padding-left: 270px;
+	padding-top: 12px;
+}
+
+#request_form .river_side {
+	padding: 12px 0;
+}
+
+#request_form  input[name="comment"]{
+	width: 220px;
+	height: 175px;
+}
+
+#request_form .submit_form{
+	padding-top: 12px;
+}
+
+#request_form .rooms_count {
+	padding-bottom: 0;
+}
+
+#request_form .area input[type="checkbox"] + label {
+	font-weight: normal;
+	
+}
+
 .popup_form h2 {
 	font-size: 18px;
 	text-align: center;
@@ -1070,7 +1105,7 @@ article.faq a {
 	padding: 0
 }
 
-.popup_form  input[type="radio"] + label span{
+.popup_form ul  input[type="radio"] + label span{
 	padding-left: 6px;
 	width: 204px;
 }

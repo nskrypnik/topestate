@@ -3,6 +3,29 @@ $(document).ready(function() {
 	$(".inquery").fancybox({
 		maxWidth	: 280,
 		maxHeight	: 631,
+		minHeight	: 631,
+		fitToView	: true,
+		scrolling   : false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		autoResize   : false,
+		closeClick	: false,
+		closeBtn: false,
+		padding: 0,
+		helpers : {
+			overlay : {
+				locked : false
+			}
+		}
+	});
+});
+
+$(document).ready(function() {
+	$(".open_request_form").fancybox({
+		maxWidth	: 580,
+		maxHeight	: 710,
+		minHeight	: 710,
 		fitToView	: true,
 		scrolling   : false,
 		width		: '70%',

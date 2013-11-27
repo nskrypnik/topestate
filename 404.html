@@ -23,6 +23,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<!-- expand content for all viewport height -->
 		<script>
@@ -184,7 +185,7 @@
 							Пойжалуйста, попробуйте позже <br />
 							или оставьте заявку на поиск варианта.
 						</p>
-						<a href="" class="yellow_button"><span>Оставить заявку на поиск варианта</span></a>
+						<a href="#request_form" class="yellow_button open_request_form"><span>Оставить заявку на поиск варианта</span></a>
 					</div>
 				</div>
 			</div>
@@ -199,8 +200,108 @@
 				</footer>
 			</div>
 		</div>
+		
+		<div id="request_form" class="popup_form" style="display: none">
+			<h2>Заявка на поиск варианта</h2>
+			<div class="leftpanel">
+				<h3><span class="error">Имя*</span></h3>
+					<input type="text" name="name"/>
+				<h3><span class="error">Телефон*</span></h3>
+					<input type="text" name="phone"/>
+				<h3>E-mail</h3>
+					<input type="text" name="email"/>
+				<h3>Количество комнат*</h3>
+					<div class="rooms_count circle_radio">
+						<input type="radio" name="rooms_count" value="1" id="rooms_21" />
+							<label for="rooms_21"><span>1</span></label>
+						<input type="radio" name="rooms_count" value="2" id="rooms_22" />
+							<label for="rooms_22"><span>2</span></label>
+						<input type="radio" name="rooms_count" value="3" id="rooms_23" />
+							<label for="rooms_23"><span>3</span></label>
+						<input type="radio" name="rooms_count" value="4" id="rooms_24" />
+							<label for="rooms_24"><span>4</span></label>
+						<input type="radio" name="rooms_count" value="5" id="rooms_25" />
+							<label for="rooms_25"><span>5+</span></label>
+						<input type="radio" name="rooms_count" value="6" id="rooms_26" />
+							<label for="rooms_26"><span>Дом</span></label>
+					</div>
+				<h3>Цена</h3>
+					<div class="price-range">
+						от <input type="text" name="price_from"/> до <input type="text" name="price_to"/>
+					</div>
+				<h3>Срок аренды*</h3>
+					<input type="text" name="rent_period"/>
+				<h3>Примечания</h3>
+					<input type="textarea" name="comment"/>
+				<p class="disclaimber">*поля обязательные для заполнения</p>
+			</div>
+			
+			<div class="rightpanel">
+				<div class="is_new">
+					<input type="checkbox" name="is_new" id="is_new"/> <label for="is_new">Новострой</label>
+				</div>
+				<div class="is_commercial">
+					<input type="checkbox" name="is_commercial" id="is_commercial" /><label for="is_commercial">Коммерческая недвижимость</label>
+				</div>
+				<h3>Район</h3>
+				<!-- choose river side -->
+				<div class="river_side medium_radio">
+					<input type="radio" name="river_side" value="left" id="left2" />
+						<label for="left2"><span>Левый берег</span></label>
+					<input type="radio" name="river_side" value="right" id="right2" />
+						<label for="right2"><span>Правый берег</span></label>
+				</div>
+				<!-- choose area -->
+				<div class="area">
+					<ul>
+						<li><input type="checkbox" name="" id="area21" /><label for="area21">Гагарина - Подстанция</label></li>
+						<li><input type="checkbox" name="" id="area22" /><label for="area22">Центр-Нагорка</label></li>
+						<li><input type="checkbox" name="" id="area23" /><label for="area23">Победа 1 - 6</label></li>
+						<li><input type="checkbox" name="" id="area24" /><label for="area24">Тополь - Сокол</label></li>
+						<li><input type="checkbox" name="" id="area25" /><label for="area25">Г. Сталинграда - 12 квартал</label></li>
+						<li><input type="checkbox" name="" id="area26" /><label for="area26">Рабочая - Титова</label></li>
+						<li><input type="checkbox" name="" id="area27" /><label for="area27">Кирова - Пушкина</label></li>
+						<li><input type="checkbox" name="" id="area28" /><label for="area28">Коммунар - Кр. Камень - Парус</label></li>
+						<li><input type="checkbox" name="" id="area29" /><label for="area29">Петровского - Западный</label></li>
+						<li><input type="checkbox" name="" id="area210" /><label for="area210">Пригород</label></li>
+					</ul>
+				</div>
+				<h3>Кто будет жить?*</h3>
+					<ul class="medium_radio">
+						<li>
+							<input type="radio" name="rentee" value="1" id="rentee1" />
+							<label for="rentee1"><span>парень</span></label>
+						</li>
+						<li>
+							<input type="radio" name="rentee" value="2" id="rentee2" />
+							<label for="rentee2"><span>девушка</span></label>
+						</li>
+						<li>
+							<input type="radio" name="rentee" value="3" id="rentee3" />
+							<label for="rentee3"><span>семья с детьми</span></label>
+						</li>
+						<li>
+							<input type="radio" name="rentee" value="4" id="rentee4" />
+							<label for="rentee4"><span>семья без детей</span></label>
+						</li>
+						<li>
+							<input type="radio" name="rentee" value="1" id="rentee5" />
+							<label for="rentee5"><span>другое</span></label>
+						</li>
+					</ul>
+				<input type="checkbox" name="have_pets" id="have_pets"/>
+				<label for="have_pets">Есть животные</label>
+			</div>
+			<div class="clearfix"></div>
+			<div class="submit_form">
+				<a class="submit_link gray_button" href="#" >
+					<span>Отправить заявку</span>
+				</a>
+			</div>
+		</div>
 
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		<script src="js/jquery.fancybox.pack.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>
