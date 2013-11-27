@@ -1019,9 +1019,70 @@ article.faq a {
 }
 
 #inquery_form {
-	width: 280px;
+	width: 220px;
+	padding: 0 30px 0 30px;
 	height: 631px;
 	background: url(../img/inquery_bg.png) no-repeat top left;
+	font-family: "Arial", Helvetica, sans-serif;
+}
+
+.popup_form h2 {
+	font-size: 18px;
+	text-align: center;
+	padding: 12px 0 0 0;
+	margin: 0;
+}
+
+.popup_form h3 {
+	padding: 15px 0 0 0;
+	margin: 0;
+	font-size: 14px;
+}
+
+.popup_form h3 span.error {
+	padding-right: 16px;
+	background: url(../img/error.png) no-repeat center right;
+}
+
+.popup_form input[type="text"] {
+	width: 220px;
+	font-size: 10px;
+}
+
+.popup_form input[type="checkbox"] + label{
+	font-size: 14px;
+	font-weight: bold;
+}
+.popup_form input[name="comment"]{
+	width: 220px;
+	height: 67px;
+}
+
+.popup_form p.disclaimber {
+	font-size: 10px;
+	padding: 0;
+	margin: 0;
+	padding: 12px 0;
+}
+
+.popup_form ul {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0
+}
+
+.popup_form  input[type="radio"] + label span{
+	padding-left: 6px;
+	width: 204px;
+}
+
+.popup_form .submit_form{
+	padding: 0;
+	text-align: center;
+}
+
+.popup_form .submit_form a{
+	font-weight: bold;
 }
 
 /*************************************************

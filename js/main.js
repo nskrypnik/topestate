@@ -51,3 +51,8 @@ $('label').click(function(){
 		$(this).toggleClass('checked');
 	}
 });
+
+// Submit link should submit the nearest form
+$('.submit_link').click(function(){
+	$(this).closest('form').submit();
+});
