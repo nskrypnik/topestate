@@ -49,6 +49,9 @@ $('label').click(function(){
 	}
 	if (input.attr('type') == 'checkbox'){
 		$(this).toggleClass('checked');
+		/*if (input.is('checked')){
+			input.attr('checked', false);
+		} else input.attr('checked', true);*/
 	}
 });
 

@@ -79,15 +79,14 @@ input[type=checkbox] + label{
 	cursor: pointer;
 }
 
-input[type=checkbox] + label:before {
-	content: "";
+input[type=checkbox] + label {
 	display: inline-block;
 	padding-left: 24px;
 	height: 17px;
 	background: url(../img/checkbox.png) no-repeat left center;
 }
 
-input[type=checkbox]:checked + label:before, input[type=checkbox] + label.checked:before {
+input[type=checkbox]:checked + label, input[type=checkbox] + label.checked {
 	background: url(../img/checkbox_pressed.png) no-repeat left center;
 }
 
