@@ -19,9 +19,7 @@ $(document).ready(function() {
 			}
 		}
 	});
-});
-
-$(document).ready(function() {
+	
 	$(".open_request_form").fancybox({
 		maxWidth	: 580,
 		maxHeight	: 710,
@@ -34,6 +32,15 @@ $(document).ready(function() {
 		autoResize   : false,
 		closeClick	: false,
 		closeBtn: false,
+		padding: 0,
+		helpers : {
+			overlay : {
+				locked : false
+			}
+		}
+	});
+	
+	$(".gallery").fancybox({
 		padding: 0,
 		helpers : {
 			overlay : {
