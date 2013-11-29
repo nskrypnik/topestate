@@ -6,6 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,16 +27,33 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<!-- expand content for all viewport height -->
 		<script>
+			var SLIDER_INTERVAL = 5000;
+		</script>
+		<script>
 			function page_on_resize(){
 				var elem = (document.compatMode === "CSS1Compat") ? 
 				document.documentElement :
 				document.body;
 
+				var w=window.innerWidth
+				|| document.documentElement.clientWidth
+				|| document.body.clientWidth;
+				/* adjust width with scroll-bars */
+				w -= 17;
+				var h = 0.72*w;
+				var slider_style = "<style>.slider_wrapper img {width: " + w +"px;}\n";
+				slider_style += "#slider .viewport {width: " + w +"px; height: " + h +"px;}\n";
+				slider_style += "#slider .overview li {width: " + w +"px; height: " + h +"px;}\n";
+				slider_style += "</style>";
+				document.write(slider_style);
 				var height = elem.clientHeight;
 				height = height - 149;
 				if (height < 830){
 					height = 830;
-				}
+				};
+				if (height < h){
+					height = h;
+				};
 				document.write("<style>.slider_wrapper {min-height: " + (height) +"px;}</style>");
 			};
 			page_on_resize();
@@ -177,7 +195,45 @@
 		<!-- End of Filter markup -->
 		
 		<div class="slider_wrapper">
-		
+			<div id="slider">
+				<div class="viewport">
+					<ul class="overview">
+						<li><img src="slides/main.png" /></li>
+						<li><img src="slides/main.png" /></li>
+						<li><img src="slides/main.png" /></li>
+					</ul>
+					<div class="slider_info_wrapper">
+						<div class="slider_info">
+							<div class="slide_details" style="display: none">
+								<article>
+								<!-- It's good idea to place first page content here -->
+								</article>
+								<div>
+								</div>
+							</div>
+							<!-- place here pagenums according to count of slides -->
+							<ul class="pager">
+								<!-- Here should go pages details(content of text block) -->
+								<li><a rel="0" class="pagenum" href="#">1</a></li>
+								<li><a rel="1" class="pagenum" href="#">2</a></li>
+								<li><a rel="2" class="pagenum" href="#">3</a></li>
+							</ul>
+							<ul class="content" style="display: none">
+								<li>
+									<article class="page0"> Hello 1 </article>
+								</li>
+								<li>
+									<article class="page1"> Hello 2 </article>
+								</li>
+								<li>
+									<article class="page2"> Hello 3 </article>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
 		</div>
 		
 		<div class="footer_wrapper main_page">
@@ -232,6 +288,11 @@
 		</div>
 
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<script src="js/jquery.tinycarousel.min.js"></script>
+		<script>
+			$('#slider').tinycarousel({ pager: true, interval: true, controls: false, intervaltime: SLIDER_INTERVAL });
+		</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>

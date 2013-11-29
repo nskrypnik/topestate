@@ -429,6 +429,65 @@ aside.filter {
 	margin-top: -12px;
 }
 
+#slider .viewport { float: left; overflow: hidden; position: relative; }
+
+#slider .overview { list-style: none; padding: 0; margin: 0;  position: absolute; left: 0; top: 0; }
+#slider .overview li{ float: left; margin: 0 0 0 0; padding: 0;}
+#slider .disable { visibility: hidden; }
+#slider .pager {
+	position: absolute;
+	top: 24px;
+	right: -80px;
+	float: right;
+	overflow:hidden; list-style: none;
+	margin: 0; 
+	padding: 0;
+	z-index: 700;
+}
+
+#slider .pager li{
+	margin-bottom: 12px;
+}
+
+#slider .pager li a {
+	color: transparent;
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: 16px;
+	height: 17px;
+	background: url(../img/checkbox.png)no-repeat center center;
+}
+
+#slider .pager li a.active {
+	background: url(../img/checkbox_pressed.png)no-repeat center center;
+}
+
+.slider_info_wrapper {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 40px;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.slider_info {
+	position: relative;
+	margin-left: 680px;
+	width: 320px;
+	height: 360px;
+	z-index: 700;
+}
+
+.slider_info .slide_details {
+	width: 320px;
+	height: 360px;
+	background: url(../img/slide_details_bg.png) no-repeat top left;
+	z-index: 700;
+}
+
+
 .content_wrapper{
 	padding-top: 173px;
 	background: url(../img/content_bg.png) no-repeat bottom right;
