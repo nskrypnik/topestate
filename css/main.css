@@ -22,7 +22,7 @@ a.gray_button, a.yellow_button {
 }
 
 button.gray, a.gray_button{
-	padding: 10px 0 10px 13px;
+	padding: 10px 0 10px 14px;
 	background: url(../img/gray_btn_l.png) no-repeat scroll left center;
 	border: none;
 	outline: none;
@@ -30,7 +30,7 @@ button.gray, a.gray_button{
 
 button.gray span, a.gray_button span{
 	background: url(../img/gray_btn_r.png) no-repeat scroll right center;
-	padding: 10px 13px 10px 0;
+	padding: 10px 14px 10px 0;
 }
 
 button.gray:active, a.gray_button:active , a.gray_button.active{
