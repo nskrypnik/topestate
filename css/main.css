@@ -439,28 +439,29 @@ aside.filter {
 	top: 24px;
 	right: -80px;
 	float: right;
-	overflow:hidden; list-style: none;
+	overflow:hidden;
+	list-style: none;
 	margin: 0; 
 	padding: 0;
-	z-index: 700;
+	z-index: 800;
 }
 
 #slider .pager li{
 	margin-bottom: 12px;
 }
 
-#slider .pager li a {
+#slider ul.pager li a {
 	color: transparent;
 	font-size: 0;
 	line-height: 0;
 	display: block;
 	width: 16px;
 	height: 17px;
-	background: url(../img/checkbox.png)no-repeat center center;
+	background: transparent url('../img/checkbox.png') no-repeat center center;
 }
 
-#slider .pager li a.active {
-	background: url(../img/checkbox_pressed.png)no-repeat center center;
+#slider ul.pager li a.active {
+	background: transparent url('../img/checkbox_pressed.png') no-repeat center center;
 }
 
 .slider_info_wrapper {
