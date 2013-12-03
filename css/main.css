@@ -135,6 +135,12 @@ input[type=checkbox]:checked + label, input[type=checkbox] + label.checked {
 	cursor: pointer
 }
 
+.circle_radio input[type=checkbox] + label {
+	padding: 0;
+	margin: 0;
+	background: none;
+}
+
 .circle_radio label span{
 	text-align: center;
 	display: inline-block;
@@ -146,7 +152,7 @@ input[type=checkbox]:checked + label, input[type=checkbox] + label.checked {
 	font-weight: bold;
 }
 
-.circle_radio input[type=radio]:checked + label span{
+.circle_radio input[type=radio]:checked + label span, .circle_radio input[type=checkbox]:checked + label span{
 	background: url(../img/circle_radio_pressed.png) no-repeat center center;
 }
 
@@ -208,6 +214,8 @@ header a{
 	font-size: 14px;
 	margin: 0;
 	padding: 0;
+	width: 330px;
+	float: left;
 }
 
 .header_right {
@@ -243,6 +251,11 @@ header a{
 	width: 96px;
 	padding-left: 25px;
 	background: url(../img/head_phone.png) no-repeat left 4px;
+}
+
+.header_phones a, .header_contact_info a {
+	text-decoration: none;
+	font-style: italic;
 }
 
 .header_phones p {
@@ -1141,7 +1154,7 @@ article.faq a {
 	padding: 12px 0;
 }
 
-#request_form  input[name="comment"]{
+#request_form  textarea[name="comment"]{
 	width: 220px;
 	height: 175px;
 }
@@ -1186,7 +1199,7 @@ article.faq a {
 	font-size: 14px;
 	font-weight: bold;
 }
-.popup_form input[name="comment"]{
+.popup_form textarea[name="comment"]{
 	width: 220px;
 	height: 67px;
 }
@@ -1276,6 +1289,13 @@ footer {
 	margin: 0;
 	font-size: 12px;
 	font-weight: bold
+}
+
+.footer_links h2 a {
+	padding: 0 0 20px 0;
+	margin: 0;
+	font-size: 12px;
+	font-weight: bold;
 }
 
 .footer_links ul {
