@@ -89,3 +89,7 @@ $('label').click(function(){
 $('.submit_link').click(function(){
 	$(this).closest('form').submit();
 });
+
+$('.content.listing .ordering a').click(function(){
+	$(this).toggleClass('desc');
+});

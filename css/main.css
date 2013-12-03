@@ -44,7 +44,7 @@ button.gray:active span, a.gray_button:active span, a.gray_button.active span{
 /* ============ yellow button styles ============ */
 
 button.yellow, a.yellow_button{
-	padding: 10px 0 10px 14px;
+	padding: 10px 0 10px 15px;
 	background: url(../img/yellow_btn_l.png) no-repeat left center;
 	border: none;
 	outline: none;
@@ -52,7 +52,7 @@ button.yellow, a.yellow_button{
 
 button.yellow span, a.yellow_button span{
 	background: url(../img/yellow_btn_r.png) no-repeat right center;
-	padding: 10px 14px 10px 0;
+	padding: 10px 15px 10px 0;
 }
 
 button.yellow:active, a.yellow_button:active, a.yellow_button.active {
@@ -318,14 +318,6 @@ nav a.current span{
 	padding-top: 161px;
 }
 
-.filter_wrapper.main_page {
-	left: 0;
-	right: 0;
-	top: 0;
-	position: absolute;
-	padding-top: 0;
-}
-
 .filter_shadow {
 	position: relative;
 	width: 310px;
@@ -335,6 +327,33 @@ nav a.current span{
 	background: url(../img/filter_shadow.png) no-repeat left 6px;
 	z-index: 400;
 }
+
+@media (max-height: 990px) {
+	.filter_wrapper{
+		left: 0;
+		right: 0;
+		top: 0;
+		position: absolute;
+		padding-top: 0;
+	}
+	
+	.filter_wrapper .filter_shadow {
+		background: url(../img/filter_shadow.png) no-repeat left 170px;
+	}
+
+	.filter_wrapper form{
+		padding-top: 163px;
+	}
+}
+
+.filter_wrapper.main_page {
+	left: 0;
+	right: 0;
+	top: 0;
+	position: absolute;
+	padding-top: 0;
+}
+
 
 .filter_wrapper.main_page .filter_shadow {
 	background: url(../img/filter_shadow.png) no-repeat left 170px;
@@ -637,6 +656,10 @@ aside.filter {
 	background: url(../img/order_arrow.png) no-repeat right 8px;
 }
 
+.content.listing .ordering a.desc{
+	background: url(../img/order_arrow_desc.png) no-repeat right 8px;
+}
+
 .content.listing .toolbar {
 	margin-bottom: 20px;
 }
@@ -659,7 +682,7 @@ aside.filter {
 .sign_type .item_wrapper {
 	float: left;
 	width: 300px;
-	height: 365px;
+	min-height: 365px;
 }
 
 .listing_container.sign_type {
@@ -1229,6 +1252,16 @@ article.faq a {
 
 .popup_form .submit_form a{
 	font-weight: bold;
+}
+
+.popup_form .currency {
+	padding-top: 15px;
+}
+
+.popup_form .currency  span{
+	padding-left: 20px;
+	padding-right: 34px;
+	margin-right: 20px;	
 }
 
 /*************************************************
