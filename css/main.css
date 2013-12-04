@@ -110,7 +110,7 @@ input[type=checkbox]:checked + label, input[type=checkbox] + label.checked {
 }
 
 .medium_radio label {
-	padding: 0px 0px 0px 9px;
+	padding: 0px 0px 0px 12px;
 	cursor: pointer;
 	font-size: 14px;
 	font-weight: normal;
@@ -118,9 +118,9 @@ input[type=checkbox]:checked + label, input[type=checkbox] + label.checked {
 
 .medium_radio label  span{
 	display: block;
-	height: 25px;
-	line-height: 25px;
-	padding-right: 9px;
+	height: 26px;
+	line-height: 26px;
+	padding-right: 12px;
 }
 
 .medium_radio input[type=radio]:checked + label  {
@@ -431,7 +431,7 @@ aside.filter {
 .filter .currency  span{
 	padding-left: 20px;
 	padding-right: 34px;
-	margin-right: 20px;	
+	margin-right: 17px;	
 }
 
 .filter .search_by_id  input[type="text"]{
@@ -659,7 +659,7 @@ aside.filter {
 }
 
 .content.listing .ordering a.desc{
-	background: url(../img/order_arrow_desc.png) no-repeat right 8px;
+	background: url(../img/order_arrow_desc.png) no-repeat right 6px;
 }
 
 .content.listing .toolbar {
@@ -1263,7 +1263,7 @@ article.faq a {
 .popup_form .currency  span{
 	padding-left: 20px;
 	padding-right: 34px;
-	margin-right: 20px;	
+	margin-right: 17px;	
 }
 
 /*************************************************
