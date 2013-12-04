@@ -152,7 +152,9 @@ input[type=checkbox]:checked + label, input[type=checkbox] + label.checked {
 	font-weight: bold;
 }
 
-.circle_radio input[type=radio]:checked + label span, .circle_radio input[type=checkbox]:checked + label span{
+.circle_radio input[type=radio]:checked + label span, .circle_radio input[type=checkbox]:checked + label span,
+.circle_radio input[type=radio] + label.checked span, .circle_radio input[type=checkbox] + label.checked span
+{
 	background: url(../img/circle_radio_pressed.png) no-repeat center center;
 }
 

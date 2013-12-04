@@ -75,7 +75,6 @@ $('label').click(function(){
 		radio_group = input.attr('name');
 		$('input[name=' + radio_group + ']').attr('checked', false);
 		input.attr('checked', true);
-
 	}
 	if (input.attr('type') == 'checkbox'){
 		$(this).toggleClass('checked');
@@ -129,6 +128,16 @@ if (property_photo.length){
 
 $('input[name="river_side"], input[name="river_side2"]').click(function(){
 	val = $(this).attr('value');
+	area = $(this).closest('div').siblings('.area');
+	area.find('ul').addClass('hidden');
+	area.find('ul.' + val + 'bank').removeClass('hidden');
+});
+
+// fix for ie8
+$('input[name="river_side"] + label, input[name="river_side2"] + label').click(function(){
+
+	input_id = $(this).attr('for');
+    val = $('#' + input_id).attr('value');
 	area = $(this).closest('div').siblings('.area');
 	area.find('ul').addClass('hidden');
 	area.find('ul.' + val + 'bank').removeClass('hidden');
