@@ -30,12 +30,13 @@
 			var SLIDER_INTERVAL = 5000;
 		</script>
 		<script>
+            var w;
 			function page_on_resize(){
 				var elem = (document.compatMode === "CSS1Compat") ? 
 				document.documentElement :
 				document.body;
 
-				var w=window.innerWidth
+				w = window.innerWidth
 				|| document.documentElement.clientWidth
 				|| document.body.clientWidth;
 				/* adjust width with scroll-bars */
@@ -44,12 +45,16 @@
 				var slider_style = "<style>.slider_wrapper img {width: " + w +"px;}\n";
 				slider_style += "#slider .viewport {width: " + w +"px; height: " + h +"px;}\n";
 				slider_style += "#slider .overview li {width: " + w +"px; height: " + h +"px;}\n";
+				if (w < 1180){
+					slider_style += ".slider_info {margin-left: 600px;}\n";
+					slider_style += "#slider pager {right: 0;}\n";
+				}
 				slider_style += "</style>";
 				document.write(slider_style);
 				var height = elem.clientHeight;
 				height = height - 149;
-				if (height < 830){
-					height = 830;
+				if (height < 730){
+					height = 730;
 				};
 				if (height < h){
 					height = h;

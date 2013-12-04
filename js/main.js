@@ -146,6 +146,16 @@ $('input[name="river_side"] + label, input[name="river_side2"] + label').click(f
 
 // resizing options
 $(window).resize(function(){
+    
+    if ($('#slider').length){
+        tw = window.innerWidth
+				|| document.documentElement.clientWidth
+				|| document.body.clientWidth;
+        if (w != tw){
+            window.location = window.location;
+        }
+    }
+    
     if ( $("html").hasClass("lt-ie9") ) {
         if ($('.filter_wrapper').hasClass('main_page')) return;
                 
