@@ -55,6 +55,7 @@
 					height = h;
 				};
 				document.write("<style>.slider_wrapper {min-height: " + (height) +"px;}</style>");
+				document.write("<style>.white_overlay {width: " + (w - 983)/2 +"px; height: " + height + "px;}</style>");
 			};
 			page_on_resize();
 		</script>
@@ -102,6 +103,8 @@
 			</header>
 		</div>
 		
+		<div class="white_overlay">
+		</div>
 		<!-- Filter markup -->
 		<div class="filter_wrapper main_page">
 			<div class="filter_shadow">

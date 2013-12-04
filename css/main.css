@@ -315,7 +315,7 @@ nav a.current span{
 	height: 100%;
 	left: 0;
 	right: 0;
-	margin: 0 auto 0 auto;
+	margin: 0 auto 0 auto !important;
 	z-index: 100;
 	padding-top: 161px;
 }
@@ -348,7 +348,7 @@ nav a.current span{
 	}
 }
 
-.filter_wrapper.main_page {
+.filter_wrapper.main_page, .filter_wrapper.not_fixed {
 	left: 0;
 	right: 0;
 	top: 0;
@@ -357,11 +357,11 @@ nav a.current span{
 }
 
 
-.filter_wrapper.main_page .filter_shadow {
+.filter_wrapper.main_page .filter_shadowm .filter_wrapper.not_fixed .filter_shadow {
 	background: url(../img/filter_shadow.png) no-repeat left 170px;
 }
 
-.filter_wrapper.main_page form{
+.filter_wrapper.main_page form, .filter_wrapper.not_fixed form{
 	padding-top: 163px;
 }
 
@@ -458,6 +458,15 @@ aside.filter {
 /*************************************************
 /* Main content styles
 /************************************************/
+
+.white_overlay {
+	position: absolute;
+	background: white;
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+	height: 100%;
+	z-index: 90;
+}
 
 .slider_wrapper {
 	margin-top: -12px;
@@ -883,6 +892,7 @@ article.about_us img {
 
 .property_details article .image_container {
 	position: relative;
+	overflow: hidden;
 }
 
 .property_details article .image_container .loupe {
@@ -1185,7 +1195,6 @@ article.faq a {
 }
 
 #request_form .submit_form{
-	padding-top: 12px;
 }
 
 #request_form .rooms_count {
@@ -1231,9 +1240,8 @@ article.faq a {
 
 .popup_form p.disclaimber {
 	font-size: 10px;
-	padding: 0;
 	margin: 0;
-	padding: 12px 0;
+	padding: 12px 0 0 0;
 }
 
 .popup_form ul {

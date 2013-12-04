@@ -15,7 +15,7 @@ $(document).ready(function() {
 		padding: 0,
 		helpers : {
 			overlay : {
-				locked : false
+				locked : true
 			}
 		}
 	});
@@ -35,7 +35,7 @@ $(document).ready(function() {
 		padding: 0,
 		helpers : {
 			overlay : {
-				locked : false
+				locked : true
 			}
 		}
 	});
@@ -44,7 +44,7 @@ $(document).ready(function() {
 		padding: 0,
 		helpers : {
 			overlay : {
-				locked : false
+				locked : true
 			}
 		}
 	});
@@ -142,3 +142,21 @@ $('input[name="river_side"] + label, input[name="river_side2"] + label').click(f
 	area.find('ul').addClass('hidden');
 	area.find('ul.' + val + 'bank').removeClass('hidden');
 });
+
+
+// resizing options
+$(window).resize(function(){
+    if ( $("html").hasClass("lt-ie9") ) {
+        if ($('.filter_wrapper').hasClass('main_page')) return;
+                
+    if ($(window).height() < 990){
+        $('.filter_wrapper').addClass('not_fixed');
+    }
+    else {
+        $('.filter_wrapper').removeClass('not_fixed');
+    };
+        
+    };   
+});
+
+
