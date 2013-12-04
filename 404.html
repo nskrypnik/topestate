@@ -125,14 +125,23 @@
 							<h3>Район</h3>
 							<!-- choose river side -->
 							<div class="river_side medium_radio">
-								<input type="radio" name="river_side" value="left" id="left" />
+								<input type="radio" name="river_side" value="left" id="left" checked="checked" />
 									<label for="left"><span>Левый берег</span></label>
 								<input type="radio" name="river_side" value="right" id="right" />
 									<label for="right"><span>Правый берег</span></label>
 							</div>
 							<!-- choose area -->
 							<div class="area">
-								<ul>
+								<ul class="leftbank">
+									<li><input type="checkbox" name="" id="area11" /><label for="area11">Березинка</label></li>
+									<li><input type="checkbox" name="" id="area12" /><label for="area12">Проспект Правды</label></li>
+									<li><input type="checkbox" name="" id="area13" /><label for="area13">Юбилейное</label></li>
+									<li><input type="checkbox" name="" id="area14" /><label for="area14">Золотые Ключи</label></li>
+									<li><input type="checkbox" name="" id="area15" /><label for="area15">Фрунзенский</label></li>
+									<li><input type="checkbox" name="" id="area16" /><label for="area16">Воронцовка</label></li>
+									<li><input type="checkbox" name="" id="area17" /><label for="area17">Северный</label></li>
+								</ul>
+								<ul class="rightbank hidden">
 									<li><input type="checkbox" name="" id="area1" /><label for="area1">Гагарина - Подстанция</label></li>
 									<li><input type="checkbox" name="" id="area2" /><label for="area2">Центр-Нагорка</label></li>
 									<li><input type="checkbox" name="" id="area3" /><label for="area3">Победа 1 - 6</label></li>
@@ -252,29 +261,38 @@
 					<input type="checkbox" name="is_commercial" id="is_commercial" /><label for="is_commercial">Коммерческая недвижимость</label>
 				</div>
 				<h3>Район</h3>
-				<!-- choose river side -->
-				<div class="river_side medium_radio">
-					<input type="radio" name="river_side" value="left" id="left2" />
-						<label for="left2"><span>Левый берег</span></label>
-					<input type="radio" name="river_side" value="right" id="right2" />
-						<label for="right2"><span>Правый берег</span></label>
-				</div>
-				<!-- choose area -->
-				<div class="area">
-					<ul>
-						<li><input type="checkbox" name="" id="area21" /><label for="area21">Гагарина - Подстанция</label></li>
-						<li><input type="checkbox" name="" id="area22" /><label for="area22">Центр-Нагорка</label></li>
-						<li><input type="checkbox" name="" id="area23" /><label for="area23">Победа 1 - 6</label></li>
-						<li><input type="checkbox" name="" id="area24" /><label for="area24">Тополь - Сокол</label></li>
-						<li><input type="checkbox" name="" id="area25" /><label for="area25">Г. Сталинграда - 12 квартал</label></li>
-						<li><input type="checkbox" name="" id="area26" /><label for="area26">Рабочая - Титова</label></li>
-						<li><input type="checkbox" name="" id="area27" /><label for="area27">Кирова - Пушкина</label></li>
-						<li><input type="checkbox" name="" id="area28" /><label for="area28">Коммунар - Кр. Камень - Парус</label></li>
-						<li><input type="checkbox" name="" id="area29" /><label for="area29">Петровского - Западный</label></li>
-						<li><input type="checkbox" name="" id="area210" /><label for="area210">Пригород</label></li>
-					</ul>
-				</div>
-				<h3>Кто будет жить?*</h3>
+					<!-- choose river side -->
+					<div class="river_side medium_radio">
+						<input type="radio" name="river_side2" value="left" id="left2" checked="checked" />
+							<label for="left2"><span>Левый берег</span></label>
+						<input type="radio" name="river_side2" value="right" id="right2" />
+							<label for="right2"><span>Правый берег</span></label>
+					</div>
+					<!-- choose area -->
+					<div class="area">
+						<ul class="leftbank">
+							<li><input type="checkbox" name="" id="area211" /><label for="area211">Березинка</label></li>
+							<li><input type="checkbox" name="" id="area212" /><label for="area212">Проспект Правды</label></li>
+							<li><input type="checkbox" name="" id="area213" /><label for="area213">Юбилейное</label></li>
+							<li><input type="checkbox" name="" id="area214" /><label for="area214">Золотые Ключи</label></li>
+							<li><input type="checkbox" name="" id="area215" /><label for="area215">Фрунзенский</label></li>
+							<li><input type="checkbox" name="" id="area216" /><label for="area216">Воронцовка</label></li>
+							<li><input type="checkbox" name="" id="area217" /><label for="area217">Северный</label></li>
+						</ul>
+						<ul class="rightbank hidden">
+							<li><input type="checkbox" name="" id="area21" /><label for="area21">Гагарина - Подстанция</label></li>
+							<li><input type="checkbox" name="" id="area22" /><label for="area22">Центр-Нагорка</label></li>
+							<li><input type="checkbox" name="" id="area23" /><label for="area23">Победа 1 - 6</label></li>
+							<li><input type="checkbox" name="" id="area24" /><label for="area24">Тополь - Сокол</label></li>
+							<li><input type="checkbox" name="" id="area25" /><label for="area25">Г. Сталинграда - 12 квартал</label></li>
+							<li><input type="checkbox" name="" id="area26" /><label for="area26">Рабочая - Титова</label></li>
+							<li><input type="checkbox" name="" id="area27" /><label for="area27">Кирова - Пушкина</label></li>
+							<li><input type="checkbox" name="" id="area28" /><label for="area28">Коммунар - Кр. Камень - Парус</label></li>
+							<li><input type="checkbox" name="" id="area29" /><label for="area29">Петровского - Западный</label></li>
+							<li><input type="checkbox" name="" id="area210" /><label for="area210">Пригород</label></li>
+						</ul>
+					</div>
+					<h3>Кто будет жить?*</h3>
 					<ul class="medium_radio">
 						<li>
 							<input type="radio" name="rentee" value="1" id="rentee1" />

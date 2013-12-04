@@ -79,9 +79,6 @@ $('label').click(function(){
 	}
 	if (input.attr('type') == 'checkbox'){
 		$(this).toggleClass('checked');
-		/*if (input.is('checked')){
-			input.attr('checked', false);
-		} else input.attr('checked', true);*/
 	}
 });
 
@@ -129,3 +126,10 @@ if (property_photo.length){
 		}
 	);
 }
+
+$('input[name="river_side"], input[name="river_side2"]').click(function(){
+	val = $(this).attr('value');
+	area = $(this).closest('div').siblings('.area');
+	area.find('ul').addClass('hidden');
+	area.find('ul.' + val + 'bank').removeClass('hidden');
+});
