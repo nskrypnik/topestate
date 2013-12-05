@@ -912,7 +912,7 @@ article.about_us img {
 
 .property_details article .photo_controls {
 	text-align: center;
-	padding: 18px 140px 12px 140px;
+	padding: 18px 140px 0 140px;
 	padding-bottom: 12px;
 }
 
@@ -958,6 +958,7 @@ article.about_us img {
 
 .property_details article .description {
 	font-size: 14px;
+	padding-top: 12px;
 } 
 
 .property_details .controls {
@@ -1242,6 +1243,10 @@ article.faq a {
 	font-size: 10px;
 	margin: 0;
 	padding: 12px 0 0 0;
+}
+
+#inquery_form  p.disclaimber {
+	padding-bottom: 12px;
 }
 
 .popup_form ul {
