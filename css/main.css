@@ -95,6 +95,7 @@ input[type=checkbox]:checked + label, input[type=checkbox] + label.checked {
 	cursor: pointer;
 	font-size: 18px;
 	font-weight: bold;
+	display: inline !important;
 }
 
 .big_radio label  span{
@@ -114,6 +115,7 @@ input[type=checkbox]:checked + label, input[type=checkbox] + label.checked {
 	cursor: pointer;
 	font-size: 14px;
 	font-weight: normal;
+	/*display: inline !important;*/
 }
 
 .medium_radio label  span{
@@ -466,6 +468,7 @@ aside.filter {
 	filter: alpha(opacity=65);
 	height: 100%;
 	z-index: 90;
+	margin-top: -50px;
 }
 
 .slider_wrapper {
@@ -1258,6 +1261,10 @@ article.faq a {
 .popup_form ul  input[type="radio"] + label span{
 	padding-left: 6px;
 	width: 204px;
+}
+
+.popup_form ul.rentee label{
+	font-weight: normal;
 }
 
 .popup_form .submit_form{
