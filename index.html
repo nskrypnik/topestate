@@ -41,6 +41,9 @@
 				|| document.body.clientWidth;
 				/* adjust width with scroll-bars */
 				w -= 17;
+				if (w < 1000){
+					w = 1000;
+				};
 				var h = 0.72*w;
 				var slider_style = "<style>.slider_wrapper img {width: " + w +"px;}\n";
 				slider_style += "#slider .viewport {width: " + w +"px; height: " + h +"px;}\n";

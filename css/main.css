@@ -177,6 +177,7 @@ input[type=checkbox]:checked + label, input[type=checkbox] + label.checked {
 	left: 0;
 	right: 0;
 	z-index: 900;
+	min-width: 1000px;
 }
 
 .header_wrapper.main_page {
@@ -1300,6 +1301,7 @@ article.faq a {
 	position: relative;
 	background: #313131 url(../img/footer_bg.png) repeat-x top left;
 	z-index: 500;
+	min-width: 1000px;
 }
 
 .footer_wrapper2{

@@ -69,15 +69,22 @@ $('a').mouseup(function(){
 });
 
 $('label').click(function(){
-	input_id = $(this).attr('for');
-	input = $('#' + input_id);
-	if (input.attr('type') == 'radio'){
-		radio_group = input.attr('name');
-		$('input[name=' + radio_group + ']').attr('checked', false);
-		input.attr('checked', true);
-	}
-	if (input.attr('type') == 'checkbox'){
-		$(this).toggleClass('checked');
+	if ($("html").hasClass("lt-ie9")){
+		input_id = $(this).attr('for');
+		input = $('#' + input_id);
+		if (input.attr('type') == 'radio'){
+			radio_group = input.attr('name');
+			$('input[name=' + radio_group + ']').attr('checked', false);
+			input.attr('checked', true);
+		}
+		if (input.attr('type') == 'checkbox'){
+			if (input[0].checked){
+				input.removeAttr('checked');
+				input[0].checked = false;
+			} else {
+				input[0].checked = true;
+			}
+		}
 	}
 });
 
@@ -151,7 +158,7 @@ $(window).resize(function(){
         tw = window.innerWidth
 				|| document.documentElement.clientWidth
 				|| document.body.clientWidth;
-        if (w != tw){
+        if (Math.abs(w - tw) > 3){
             window.location = window.location;
         }
     }
