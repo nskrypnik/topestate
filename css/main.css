@@ -75,18 +75,19 @@ input[type=radio], input[type=checkbox] {
     display: none; 
 }
 
-input[type=checkbox] + label{
+input[type=checkbox] + label, .rentee input[type=radio] + label{
 	cursor: pointer;
 }
 
-input[type=checkbox] + label {
+input[type=checkbox] + label, .rentee input[type=radio] + label {
 	display: inline-block;
 	padding-left: 24px;
 	height: 17px;
 	background: url(../img/checkbox.png) no-repeat left center;
 }
 
-input[type=checkbox]:checked + label, input[type=checkbox] + label.checked {
+input[type=checkbox]:checked + label, input[type=checkbox] + label.checked,
+.rentee input[type=radio]:checked + label, .rentee input[type=radio] + label.checked {
 	background: url(../img/checkbox_pressed.png) no-repeat left center;
 }
 
