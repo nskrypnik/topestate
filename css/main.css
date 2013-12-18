@@ -1300,10 +1300,13 @@ article.faq a {
 /************************************************/
 
 .footer_wrapper {
-	position: relative;
+	position: absolute;
 	background: #313131 url(../img/footer_bg.png) repeat-x top left;
 	z-index: 500;
 	min-width: 1000px;
+    left: 0;
+    right: 0;
+    bottom: -53px;
 }
 
 .footer_wrapper2{
@@ -1312,6 +1315,7 @@ article.faq a {
 
 .footer_wrapper.main_page{
 	min-height: 350px;
+	bottom: -350px;
 }
 
 footer {
