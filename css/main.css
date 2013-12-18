@@ -567,6 +567,7 @@ aside.filter {
 }
 
 .content_wrapper{
+    min-width: 1000px;
 	padding-top: 173px;
 	background: url(../img/content_bg.png) no-repeat bottom right;
 }
