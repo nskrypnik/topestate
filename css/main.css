@@ -745,6 +745,11 @@ aside.filter {
 	font-size: 18px;
 }
 
+.sign_type .item_details h2 {
+    width: 285px;
+    word-wrap: break-word;
+}
+
 .sign_type .item_details {
 	margin-top: 15px;
 }
