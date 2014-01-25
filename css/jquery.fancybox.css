@@ -136,11 +136,11 @@
 }
 
 .fancybox-prev {
-	left: 35%;
+	left: 25%;
 }
 
 .fancybox-next {
-	right: 35%;
+	right: 25%;
 }
 
 .fancybox-nav span {
@@ -238,7 +238,7 @@
 .fancybox-title-float-wrap .child {
 	display: inline-block;
 	margin-right: -100%;
-	padding: 0 20px;
+	padding: 0 0px;
 	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
 	color: #000;
 	line-height: 24px;
