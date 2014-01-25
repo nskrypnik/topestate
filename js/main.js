@@ -104,11 +104,13 @@ var property_photo = $('.photo')
 
 if (property_photo.length){
 	var curr_photo = 0;
-	var photo_gallery = {count: 0, photos: Array()};
+	var photo_gallery = {count: 0, photos: Array(), links: Array()};
 	photo_gallery.count = $('a[rel="gallery"]').length;
 	for (i=0; i < photo_gallery.count; i++){
-		photo = $('a[rel="gallery"] img')[i];
-		photo_gallery.photos[i] = $(photo).attr('src')
+		var photo = $('a[rel="gallery"] img')[i];
+		var a = $('a[rel="gallery"]')[i];
+		photo_gallery.photos[i] = $(photo).attr('src');
+		photo_gallery.links[i] = $(a).attr('href');
 	}
 
 	$('.photo .photo_controls a').click(function(){
@@ -125,7 +127,8 @@ if (property_photo.length){
 				}
 				else curr_photo++;
 			}
-			$($('.photo .image_container img')[0]).attr('src', photo_gallery.photos[curr_photo]);
+			$('.photo .image_container a').addClass("hidden");
+			$($('.photo .image_container a')[curr_photo]).removeClass("hidden");
 			t = curr_photo + 1;
 			$('.photo .photo_controls span.photo_page').text(t + '/' + photo_gallery.count);
 			return false;
