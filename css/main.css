@@ -1073,47 +1073,48 @@ aside.faq_navigation ul.top {
 	padding: 0; margin: 0;
 }
 
-aside.faq_navigation ul.top li {
+aside.faq_navigation ul.top li span {
+    display: block;
 	padding: 6px 0 10px 30px;
 }
 
-li.key_sign {
+li.key_sign span {
 	background: url(../img/faq/key.png) no-repeat 5px 7px;
 }
 
-li.key_sign.current {
+li.key_sign.current span{
 	background: #3e3e3e url(../img/faq/key_active.png) no-repeat 5px 7px;
 }
 
-li.dollar_sign {
+li.dollar_sign span{
 	background: url(../img/faq/dollar.png) no-repeat 5px 7px;
 }
 
-li.dollar_sign.current {
+li.dollar_sign.current span{
 	background: #3e3e3e url(../img/faq/dollar_active.png) no-repeat 5px 7px;
 }
 
-li.load_sign {
+li.load_sign span {
 	background: url(../img/faq/load.png) no-repeat 5px 7px;
 }
 
-li.load_sign.current {
+li.load_sign.current span{
 	background: #3e3e3e url(../img/faq/load_active.png) no-repeat 5px 7px;
 }
 
-li.vip_sign {
+li.vip_sign span{
 	background: url(../img/faq/vip.png) no-repeat 5px 7px;
 }
 
-li.vip_sign.current {
+li.vip_sign.current span{
 	background: #3e3e3e url(../img/faq/vip_active.png) no-repeat 5px 7px;
 }
 
-li.info_sign {
+li.info_sign span{
 	background: url(../img/faq/info.png) no-repeat 5px 7px;
 }
 
-li.info_sign.current {
+li.info_sign.current span{
 	background: #3e3e3e url(../img/faq/info_active.png) no-repeat 5px 7px;
 }
 
@@ -1134,8 +1135,12 @@ aside.faq_navigation ul.sub{
 }
 
 aside.faq_navigation ul.sub li {
-	padding: 12px 0 0px 30px;
-	background: url(../img/li_circle.png) no-repeat  18px 22px;
+	padding: 6px 0 6px 30px;
+	background: url(../img/li_circle.png) no-repeat  18px 16px;
+}
+
+aside.faq_navigation ul.sub li.current {
+    background-color: #3e3e3e;
 }
 
 article.faq {
