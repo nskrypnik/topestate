@@ -44,7 +44,7 @@
 				if (w < 1000){
 					w = 1000;
 				};
-				var h = 0.72*w;
+				h = 730;
 				var slider_style = "<style>.slider_wrapper img {width: " + w +"px;}\n";
 				slider_style += "#slider .viewport {width: " + w +"px; height: " + h +"px;}\n";
 				slider_style += "#slider .overview li {width: " + w +"px; height: " + h +"px;}\n";
@@ -54,14 +54,7 @@
 				}
 				slider_style += "</style>";
 				document.write(slider_style);
-				var height = elem.clientHeight;
-				height = height - 149;
-				if (height < 730){
-					height = 730;
-				};
-				if (height < h){
-					height = h;
-				};
+				var height = h;
 				document.write("<style>.slider_wrapper {min-height: " + (height) +"px;}</style>");
 				height += 50;
 				document.write("<style>.white_overlay {width: " + (w - 953)/2 +"px; height: " + height + "px;}</style>");
@@ -69,7 +62,7 @@
 			page_on_resize();
 		</script>
     </head>
-    <body>
+    <body class="main">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
